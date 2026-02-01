@@ -40,12 +40,7 @@ export default function Hero() {
           </svg>
         </motion.div>
 
-        <motion.div
-          initial={{ opacity: 0, x: 50 }}
-          animate={{ opacity: 1, x: 0 }}
-          transition={{ duration: 0.8, delay: 0.2 }}
-          className="relative"
-        >
+        <div className="relative">
           {/* Red Decorative Block */}
           <div className="absolute -top-8 -right-8 w-full h-full bg-red-accent z-0"></div>
           {/* Black Decorative Block */}
@@ -59,9 +54,11 @@ export default function Hero() {
               height={600}
               className="w-full h-auto object-cover"
               priority
+              loading="eager"
+              sizes="(max-width: 768px) 100vw, 800px"
             />
           </div>
-        </motion.div>
+        </div>
       </div>
     </section>
   );

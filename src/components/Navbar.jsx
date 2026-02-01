@@ -14,6 +14,7 @@ export default function Navbar() {
                 src="/images/triusslogo.png"
                 alt="Triuss Logo"
                 fill
+                sizes="192px"
                 className="object-contain"
                 priority
               />
@@ -57,10 +58,10 @@ export default function Navbar() {
         </div>
 
         <div className="flex items-center gap-6">
-          <button className="p-2 hover:bg-gray-200 rounded-full transition">
+          <button className="p-2 hover:bg-gray-200 rounded-full transition" aria-label="Search">
             <Search className="w-5 h-5 text-gray-600" />
           </button>
-          <button className="p-2 hover:bg-gray-200 rounded-full transition md:hidden">
+          <button className="p-2 hover:bg-gray-200 rounded-full transition md:hidden" aria-label="Open Menu">
             <Menu className="w-6 h-6 text-gray-600" />
           </button>
           <button className="hidden md:block btn-primary text-sm">

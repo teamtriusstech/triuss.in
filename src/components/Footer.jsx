@@ -13,6 +13,7 @@ export default function Footer() {
               src="/images/triusslogo.png"
               alt="Triuss Logo"
               fill
+              sizes="(max-width: 768px) 128px, 192px"
               className="object-contain"
             />
           </div>
