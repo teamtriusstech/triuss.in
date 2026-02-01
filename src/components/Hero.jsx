@@ -54,7 +54,6 @@ export default function Hero() {
               height={600}
               priority
               loading="eager"
-              fetchPriority="high"
               sizes="(max-width: 768px) 100vw, 800px"
               className="w-full h-auto object-cover"
             />
