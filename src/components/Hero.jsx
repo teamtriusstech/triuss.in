@@ -48,7 +48,7 @@ export default function Hero() {
           {/* Main Image Container */}
           <div className="relative z-10 border-2 border-white">
             <Image
-              src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=800&h=600&fit=crop"
+              src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=1000&q=75&auto=format"
               alt="Team working"
               width={800}
               height={600}
