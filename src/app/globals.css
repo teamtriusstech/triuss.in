@@ -1,0 +1,100 @@
+@import "tailwindcss";
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@theme inline {
+  --color-hero-bg: #f5f3ef;
+  --color-red-accent: #e84c4c;
+  --color-blue-accent: #5b5bfa;
+  --color-dark: #0f0f1a;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  overflow-x: hidden;
+}
+
+.btn-primary {
+  position: relative;
+  background: white;
+  border: 2px solid #1a1a2e;
+  padding: 12px 24px;
+  font-weight: 600;
+  transition: all 0.3s;
+  box-shadow: 4px 4px 0px #1a1a2e;
+}
+
+.btn-primary:hover {
+  transform: translate(2px, 2px);
+  box-shadow: 2px 2px 0px #1a1a2e;
+}
+
+.btn-white {
+  position: relative;
+  background: white;
+  border: 2px solid white;
+  color: #1a1a2e;
+  padding: 10px 20px;
+  font-weight: 600;
+  transition: all 0.3s;
+  box-shadow: 4px 4px 0px rgba(0, 0, 0, 0.3);
+}
+
+.btn-white:hover {
+  transform: translate(2px, 2px);
+  box-shadow: 2px 2px 0px rgba(0, 0, 0, 0.3);
+}
+
+.service-card {
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  transition: all 0.3s;
+}
+
+.service-card:hover {
+  border-color: rgba(255, 255, 255, 0.5);
+  transform: translateY(-5px);
+}
+
+.feature-card {
+  transition: all 0.3s;
+}
+
+.feature-card:hover {
+  transform: translateY(-5px);
+}
+
+.project-card {
+  overflow: hidden;
+  position: relative;
+}
+
+.project-card img {
+  transition: transform 0.5s;
+}
+
+.project-card:hover img {
+  transform: scale(1.05);
+}
+
+.input-underline {
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+  padding: 12px 0;
+  color: white;
+  width: 100%;
+  outline: none;
+  transition: border-color 0.3s;
+}
+
+.input-underline:focus {
+  border-bottom-color: white;
+}
+
+.input-underline::placeholder {
+  color: rgba(255, 255, 255, 0.7);
+}
