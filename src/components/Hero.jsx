@@ -53,7 +53,6 @@ export default function Hero() {
               width={800}
               height={600}
               priority
-              loading="eager"
               sizes="(max-width: 768px) 100vw, 800px"
               className="w-full h-auto object-cover"
             />

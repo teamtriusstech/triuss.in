@@ -23,13 +23,10 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en" className="scroll-smooth">
       <head>
-        <link rel="preload" as="image" href="https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=1000&q=75&auto=format" fetchPriority="high" />
-        <link rel="preconnect" href="https://images.unsplash.com" crossOrigin="anonymous" />
-        <link rel="dns-prefetch" href="https://images.unsplash.com" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
       </head>
-      <body className={`${inter.variable} font-sans antialiased bg-white`}>
+      <body className={`${inter.variable} font-sans antialiased bg-white`} suppressHydrationWarning>
         {children}
         <WhatsAppButton />
       </body>
