@@ -11,14 +11,14 @@ const services = [
     title: "Website Development",
     icon: <Monitor className="w-6 h-6 text-white" />,
     image: "/images/web_development_new.png",
-    desc: "Professional websites that help small businesses present themselves clearly and professionally online."
+    desc: "Our expert website development team builds fast, secure, and SEO-optimized websites tailored for small businesses and enterprises in Bangalore to establish a strong online presence."
   },
   {
     id: "ecommerce-solutions",
     title: "E-Commerce Solutions",
     icon: <ShoppingBag className="w-6 h-6 text-white" />,
     image: "/images/ecommerce_new.png",
-    desc: "Secure and scalable online stores that make selling products online simple and efficient."
+    desc: "We build modern, user-friendly e-commerce platforms that integrate secure payment gateways, inventory management, and smooth checkout experiences to drive online sales."
   },
   {
     id: "whatsapp-commerce",
@@ -103,7 +103,8 @@ export default function Services() {
                   src={service.image}
                   alt={service.title}
                   fill
-                  quality={60}
+                  quality={50}
+                  loading="lazy"
                   sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 25vw"
                   className="object-cover transition-transform duration-500 group-hover:scale-110"
                 />

@@ -29,10 +29,10 @@ export default function About() {
           <div className="relative z-10">
             <Image
               src="/images/about_team_stack.png"
-              alt="Triuss Team Collaboration"
+              alt="Triuss Team collaborating on tech stack and digital strategy for Bangalore businesses"
               width={500}
               height={400}
-              className="w-full h-auto shadow-md rounded-lg"
+              className="w-full h-auto shadow-xl rounded-2xl"
             />
           </div>
         </motion.div>

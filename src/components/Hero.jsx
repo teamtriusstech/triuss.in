@@ -9,11 +9,11 @@ export default function Hero() {
         <motion.div
           initial={{ opacity: 0, x: -50 }}
           animate={{ opacity: 1, x: 0 }}
-          transition={{ duration: 0.8 }}
+          transition={{ duration: 0.5 }}
           className="relative z-10"
         >
           <span className="text-red-accent font-bold text-lg mb-4 block">~#1 Digital Growth Partner in Bangalore</span>
-          <h1 className="text-4xl md:text-6xl font-bold text-gray-900 leading-tight mb-6">
+          <h1 className="text-3xl sm:text-4xl md:text-6xl font-bold text-gray-900 leading-tight mb-6">
             Empowering<br />
             Businesses in<br />
             <span className="relative inline-block">
@@ -48,13 +48,14 @@ export default function Hero() {
           {/* Main Image Container */}
           <div className="relative z-10 border-2 border-white">
             <Image
-              src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=1000&q=75&auto=format"
-              alt="Team working"
+              src="https://images.unsplash.com/photo-1522071820081-009f0129c71c"
+              alt="Triuss Digital Marketing Team collaborating on software development and SEO projects in Bangalore"
               width={800}
               height={600}
               priority
+              fetchPriority="high"
               sizes="(max-width: 768px) 100vw, 800px"
-              className="w-full h-auto object-cover"
+              className="w-full h-auto object-cover rounded shadow-2xl"
             />
           </div>
         </div>

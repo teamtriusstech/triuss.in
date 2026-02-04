@@ -15,17 +15,8 @@ export default function WhatsAppButton() {
             whileHover={{ scale: 1.1 }}
             whileTap={{ scale: 0.9 }}
         >
-            <motion.div
-                className="absolute inset-0 bg-[#25D366] rounded-full"
-                animate={{
-                    scale: [1, 1.5, 1],
-                    opacity: [0.7, 0, 0.7]
-                }}
-                transition={{
-                    duration: 2,
-                    repeat: Infinity,
-                    ease: "easeInOut"
-                }}
+            <div
+                className="absolute inset-0 bg-[#25D366] rounded-full opacity-0 hover:opacity-20 transition-opacity duration-300"
             />
             <svg
                 className="w-8 h-8 relative z-10"
