@@ -48,7 +48,7 @@ export default function Hero() {
           {/* Main Image Container */}
           <div className="relative z-10 border-2 border-white">
             <Image
-              src="https://images.unsplash.com/photo-1522071820081-009f0129c71c"
+              src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=1200&q=80&auto=format"
               alt="Triuss Digital Marketing Team collaborating on software development and SEO projects in Bangalore"
               width={800}
               height={600}
