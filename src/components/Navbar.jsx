@@ -70,7 +70,7 @@ export default function Navbar() {
       </div>
 
       {/* Mobile Menu */}
-      <div className={`md:hidden fixed inset-0 top-[72px] bg-white z-[90] transition-transform duration-300 ease-in-out ${isMenuOpen ? 'translate-x-0' : 'translate-x-full'}`}>
+      <div className={`md:hidden fixed inset-0 top-[72px] bg-white z-[90] transition-transform duration-300 ease-in-out ${isMenuOpen ? 'translate-x-0 visible' : 'translate-x-full invisible'}`}>
         <div className="flex flex-col p-6 space-y-4">
           {navLinks.map((link) => (
             <Link

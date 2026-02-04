@@ -2,7 +2,7 @@ import * as motion from "framer-motion/client";
 
 export default function Contact() {
   return (
-    <section className="relative" id="contact">
+    <section className="relative overflow-hidden" id="contact">
       <div className="grid md:grid-cols-2">
         {/* Left - Blue Form */}
         <motion.div

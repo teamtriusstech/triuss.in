@@ -2,7 +2,7 @@ import * as motion from "framer-motion/client";
 
 export default function Features() {
   return (
-    <section className="py-16 md:py-24 px-6 bg-white">
+    <section className="py-16 md:py-24 px-6 bg-white overflow-hidden">
       <div className="max-w-7xl mx-auto">
         <div className="grid md:grid-cols-2 gap-8 mb-12 md:mb-16">
           <div className="flex flex-col">
