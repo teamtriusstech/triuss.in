@@ -11,7 +11,7 @@ export default function Footer() {
           <div className="relative w-32 h-10 md:w-48 md:h-16">
             <Image
               src="/images/triuss-logo.svg"
-              alt="Triuss Logo"
+              alt="Triuss Digital Growth Agency Bangalore - Logo"
               fill
               sizes="(max-width: 768px) 128px, 192px"
               className="object-contain"

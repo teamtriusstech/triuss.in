@@ -101,7 +101,7 @@ export default function Services() {
               <div className="relative h-48 w-full overflow-hidden">
                 <Image
                   src={service.image}
-                  alt={service.title}
+                  alt={`${service.title} - Expert digital solution by Triuss Bangalore to help businesses scale and optimize their online presence.`}
                   fill
                   quality={50}
                   loading="lazy"
