@@ -7,8 +7,8 @@
 
 @theme inline {
   --color-hero-bg: #f5f3ef;
-  --color-red-accent: #c53030;
-  --color-blue-accent: #5b5bfa;
+  --color-brand-blue: #2563eb;
+  --color-brand-blue-deep: #1d4ed8;
   --color-dark: #0a0a14;
 }
 

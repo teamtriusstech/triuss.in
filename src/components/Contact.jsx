@@ -10,14 +10,14 @@ export default function Contact() {
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.8 }}
           viewport={{ once: true }}
-          className="bg-blue-accent py-8 px-5 md:px-8 flex flex-col justify-center"
+          className="bg-brand-blue-deep py-8 px-5 md:px-8 flex flex-col justify-center"
         >
           <h2 className="text-white/90 font-bold text-xl md:text-2xl mb-4 block">~Contact Us</h2>
           <h3 className="text-3xl md:text-5xl font-bold text-white mb-6">
             Get in Touch
           </h3>
           <p className="text-white/80 mb-6 text-sm md:text-lg leading-relaxed">
-            Ready to grow? <span className="text-red-accent font-bold underline">Partner with Triuss</span> today to dominate the digital landscape.
+            Ready to grow? <span className="text-brand-blue font-bold underline">Partner with Triuss</span> today to dominate the digital landscape.
           </p>
 
           <div className="text-white mb-4 space-y-2 text-sm">

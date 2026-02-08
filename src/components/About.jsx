@@ -16,7 +16,7 @@ export default function About() {
           className="relative max-w-lg mx-auto md:mx-0"
         >
           {/* Red Decorative Lines */}
-          <svg className="absolute -top-6 -left-3 w-12 h-12 text-red-accent" viewBox="0 0 60 60" fill="none" stroke="currentColor" strokeWidth="3">
+          <svg className="absolute -top-6 -left-3 w-12 h-12 text-brand-blue" viewBox="0 0 60 60" fill="none" stroke="currentColor" strokeWidth="3">
             <line x1="10" y1="10" x2="30" y2="5" strokeLinecap="round" />
             <line x1="5" y1="25" x2="25" y2="15" strokeLinecap="round" />
             <line x1="15" y1="40" x2="30" y2="25" strokeLinecap="round" />
@@ -43,15 +43,15 @@ export default function About() {
           transition={{ duration: 0.8 }}
           viewport={{ once: true }}
         >
-          <h2 className="text-red-accent font-bold text-2xl md:text-3xl mb-4 block">~About Us</h2>
+          <h2 className="text-brand-blue font-bold text-2xl md:text-3xl mb-4 block">~About Us</h2>
           <h3 className="text-4xl md:text-6xl font-bold text-gray-900 mb-6">
             What Triuss Does?
           </h3>
           <p className="text-gray-600 mb-4 text-sm md:text-lg leading-relaxed">
-            Triuss was founded to empower forward-thinking businesses in <span className="text-red-accent font-medium">Bangalore</span> that demand clarity and results. We partner with business leaders to build robust <span className="text-red-accent font-medium">online ecosystems</span> and streamline operations using <span className="text-red-accent font-medium">cutting-edge digital solutions</span>.
+            Triuss was founded to empower forward-thinking businesses in <span className="text-brand-blue font-medium">Bangalore</span> that demand clarity and results. We partner with business leaders to build robust <span className="text-brand-blue font-medium">online ecosystems</span> and streamline operations using <span className="text-brand-blue font-medium">cutting-edge digital solutions</span>.
           </p>
           <p className="text-gray-600 mb-6 text-sm md:text-lg leading-relaxed">
-            Many organizations struggle with underperforming websites and limited search visibility. Triuss unifies essential services under one roof—from <span className="text-red-accent font-medium">custom web development</span> to integrated business systems, we help you <span className="text-red-accent font-medium">scale with confidence</span>.
+            Many organizations struggle with underperforming websites and limited search visibility. Triuss unifies essential services under one roof—from <span className="text-brand-blue font-medium">custom web development</span> to integrated business systems, we help you <span className="text-brand-blue font-medium">scale with confidence</span>.
           </p>
           <Link href="/#services" className="btn-primary py-2 px-6 text-sm inline-block">
             View Our Services ▶

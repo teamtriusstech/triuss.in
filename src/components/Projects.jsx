@@ -132,13 +132,13 @@ function ProjectCard({ client, index }) {
         )}
 
         <div className="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
-          <a href={client.url} target="_blank" rel="noopener noreferrer" className="bg-white/90 p-3 rounded-full hover:bg-red-accent hover:text-white transition-colors" aria-label={`Visit ${client.name} website`}>
+          <a href={client.url} target="_blank" rel="noopener noreferrer" className="bg-white/90 p-3 rounded-full hover:bg-brand-blue hover:text-white transition-colors" aria-label={`Visit ${client.name} website`}>
             <ExternalLink className="w-6 h-6" />
           </a>
         </div>
       </div>
       <div className="p-5 flex flex-col flex-grow">
-        <h3 className="text-xl font-bold text-gray-900 group-hover:text-red-accent transition-colors mb-2">
+        <h3 className="text-xl font-bold text-gray-900 group-hover:text-brand-blue transition-colors mb-2">
           {client.name}
         </h3>
         <p className="text-sm text-gray-600 mb-4 flex-grow leading-relaxed line-clamp-3">
@@ -149,7 +149,7 @@ function ProjectCard({ client, index }) {
           target="_blank"
           rel="noopener noreferrer"
           aria-label={`Visit ${client.name} website`}
-          className="inline-flex items-center justify-center gap-2 w-full py-2 px-4 bg-gray-900 text-white text-sm font-medium rounded hover:bg-red-accent transition-colors"
+          className="inline-flex items-center justify-center gap-2 w-full py-2 px-4 bg-gray-900 text-white text-sm font-medium rounded hover:bg-brand-blue transition-colors"
         >
           Visit Site <ExternalLink className="w-3 h-3" />
         </a>
@@ -169,12 +169,12 @@ export default function Projects() {
             transition={{ duration: 0.6 }}
             viewport={{ once: true }}
           >
-            <h2 className="text-red-accent font-bold text-2xl md:text-3xl mb-4 block">~Our Work</h2>
+            <h2 className="text-brand-blue font-bold text-2xl md:text-3xl mb-4 block">~Our Work</h2>
             <h3 className="text-4xl md:text-6xl font-bold text-gray-900 mb-6">
               Our Valuable Clients & Success Stories
             </h3>
             <p className="text-gray-600 max-w-4xl mx-auto text-sm md:text-lg leading-relaxed">
-              We take pride in helping diverse businesses establish their <span className="text-red-accent font-medium">digital presence</span>. Here are some of the high-performance solutions we've <span className="text-red-accent font-medium">delivered</span> to our partners.
+              We take pride in helping diverse businesses establish their <span className="text-brand-blue font-medium">digital presence</span>. Here are some of the high-performance solutions we've <span className="text-brand-blue font-medium">delivered</span> to our partners.
             </p>
           </motion.div>
         </div>

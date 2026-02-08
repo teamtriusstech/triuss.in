@@ -10,7 +10,7 @@ export default function Footer() {
         <div className="col-span-2 md:col-span-1 space-y-3 md:space-y-4">
           <div className="relative w-32 h-10 md:w-48 md:h-16">
             <Image
-              src="/images/triusslogo.png"
+              src="/images/triuss-logo.svg"
               alt="Triuss Logo"
               fill
               sizes="(max-width: 768px) 128px, 192px"
@@ -26,10 +26,10 @@ export default function Footer() {
         <div>
           <h4 className="text-white font-bold mb-2 md:mb-4">Quick Links</h4>
           <ul className="space-y-2 text-sm text-gray-400">
-            <li><Link href="/" className="hover:text-red-accent transition">Home</Link></li>
-            <li><Link href="/#about" className="hover:text-red-accent transition">About Us</Link></li>
-            <li><Link href="/#services" className="hover:text-red-accent transition">Services</Link></li>
-            <li><Link href="/#work" className="hover:text-red-accent transition">Our Work</Link></li>
+            <li><Link href="/" className="hover:text-brand-blue transition">Home</Link></li>
+            <li><Link href="/#about" className="hover:text-brand-blue transition">About Us</Link></li>
+            <li><Link href="/#services" className="hover:text-brand-blue transition">Services</Link></li>
+            <li><Link href="/#work" className="hover:text-brand-blue transition">Our Work</Link></li>
           </ul>
         </div>
 
@@ -37,10 +37,10 @@ export default function Footer() {
         <div>
           <h4 className="text-white font-bold mb-2 md:mb-4">Services</h4>
           <ul className="space-y-2 text-sm text-gray-400">
-            <li><Link href="/#website-development" className="hover:text-red-accent transition">Web Development</Link></li>
-            <li><Link href="/#seo-services" className="hover:text-red-accent transition">SEO & Google Business</Link></li>
-            <li><Link href="/#social-media-marketing" className="hover:text-red-accent transition">Digital Marketing</Link></li>
-            <li><Link href="/#whatsapp-commerce" className="hover:text-red-accent transition">WhatsApp Business</Link></li>
+            <li><Link href="/#website-development" className="hover:text-brand-blue transition">Web Development</Link></li>
+            <li><Link href="/#seo-services" className="hover:text-brand-blue transition">SEO & Google Business</Link></li>
+            <li><Link href="/#social-media-marketing" className="hover:text-brand-blue transition">Digital Marketing</Link></li>
+            <li><Link href="/#whatsapp-commerce" className="hover:text-brand-blue transition">WhatsApp Business</Link></li>
           </ul>
         </div>
 
@@ -50,7 +50,7 @@ export default function Footer() {
           <div className="flex gap-4">
             <a
               href="mailto:teamtriuss@gmail.com"
-              className="bg-gray-800 p-2 md:p-3 rounded-full hover:bg-red-accent transition text-white"
+              className="bg-gray-800 p-2 md:p-3 rounded-full hover:bg-brand-blue transition text-white"
               aria-label="Email Us"
             >
               <Mail className="w-5 h-5" />

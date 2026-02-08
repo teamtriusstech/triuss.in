@@ -15,7 +15,7 @@ export const metadata = {
     title: "Triuss - Digital Services for Small Businesses",
     description: "Helping Small Businesses in Bangalore Grow Digitally.",
     type: "website",
-    images: ["/images/triusslogo.png"],
+    images: ["/images/triuss-logo.svg"],
   },
 };
 

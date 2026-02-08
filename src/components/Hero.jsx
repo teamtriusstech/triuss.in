@@ -12,12 +12,12 @@ export default function Hero() {
           transition={{ duration: 0.5 }}
           className="relative z-10"
         >
-          <span className="text-red-accent font-bold text-lg mb-4 block">~#1 Digital Growth Partner in Bangalore</span>
+          <span className="text-brand-blue font-bold text-lg mb-4 block">~#1 Digital Growth Partner in Bangalore</span>
           <h1 className="text-3xl sm:text-4xl md:text-6xl font-bold text-gray-900 leading-tight mb-6">
             Empowering<br />
             Businesses in<br />
             <span className="relative inline-block">
-              <span className="text-red-accent">Bangalore to Scale</span>
+              <span className="text-brand-blue">Bangalore to Scale</span>
               <svg className="absolute -top-4 -right-8 w-8 h-8" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
                 <path d="M4 4l4 4m0 0l-4 4m4-4H0" transform="translate(8,0)" />
                 <path d="M20 4l-4 4m0 0l4 4m-4-4h12" transform="translate(-8,0)" />
@@ -42,7 +42,7 @@ export default function Hero() {
 
         <div className="relative">
           {/* Red Decorative Block */}
-          <div className="absolute -top-8 -right-8 w-full h-full bg-red-accent z-0"></div>
+          <div className="absolute -top-8 -right-8 w-full h-full bg-brand-blue z-0"></div>
           {/* Black Decorative Block */}
           <div className="absolute top-8 -right-4 w-3/4 h-3/4 bg-gray-900 z-0"></div>
           {/* Main Image Container */}

@@ -75,12 +75,12 @@ export default function Services() {
             transition={{ duration: 0.6 }}
             viewport={{ once: true }}
           >
-            <h1 className="text-red-accent font-bold text-2xl md:text-3xl mb-4 block">~Our Services</h1>
+            <h1 className="text-brand-blue font-bold text-2xl md:text-3xl mb-4 block">~Our Services</h1>
             <h2 className="text-4xl md:text-6xl font-bold text-white mb-6">
               Comprehensive Digital Growth Solutions
             </h2>
             <p className="text-gray-400 max-w-4xl mx-auto text-sm md:text-lg leading-relaxed">
-              From high-performance <span className="text-red-accent">website development</span> and e-commerce solutions to advanced SEO, WhatsApp commerce, and integrated management systems, we provide the tools businesses in <span className="text-red-accent">Bangalore</span> need to <span className="text-red-accent">dominate their market</span>.
+              From high-performance <span className="text-brand-blue">website development</span> and e-commerce solutions to advanced SEO, WhatsApp commerce, and integrated management systems, we provide the tools businesses in <span className="text-brand-blue">Bangalore</span> need to <span className="text-brand-blue">dominate their market</span>.
               Helping businesses scale with precision and expert digital strategies.
             </p>
           </motion.div>
@@ -95,7 +95,7 @@ export default function Services() {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: index * 0.1 }}
               viewport={{ once: true }}
-              className="service-card group relative overflow-hidden rounded-2xl bg-white/5 border border-white/10 hover:border-red-accent/50 transition-all duration-300 scroll-mt-24 h-full flex flex-col"
+              className="service-card group relative overflow-hidden rounded-2xl bg-white/5 border border-white/10 hover:border-brand-blue/50 transition-all duration-300 scroll-mt-24 h-full flex flex-col"
             >
               {/* Image Container */}
               <div className="relative h-48 w-full overflow-hidden">
@@ -111,20 +111,20 @@ export default function Services() {
                 <div className="absolute inset-0 bg-gradient-to-t from-dark/90 to-transparent opacity-60" />
 
                 {/* Floating Icon */}
-                <div className="absolute bottom-4 right-4 bg-red-accent p-3 rounded-full shadow-lg transform translate-y-2 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-300">
+                <div className="absolute bottom-4 right-4 bg-brand-blue p-3 rounded-full shadow-lg transform translate-y-2 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-300">
                   {service.icon}
                 </div>
               </div>
 
               {/* Content */}
               <div className="p-6 flex flex-col flex-grow">
-                <h3 className="text-white font-bold mb-3 text-xl group-hover:text-red-accent transition-colors">
+                <h3 className="text-white font-bold mb-3 text-xl group-hover:text-brand-blue transition-colors">
                   {service.title}
                 </h3>
                 <p className="text-gray-400 text-sm leading-relaxed mb-4 flex-grow">
                   {service.desc}
                 </p>
-                <div className="flex items-center text-red-accent text-sm font-semibold opacity-0 -translate-x-4 group-hover:opacity-100 group-hover:translate-x-0 transition-all duration-300">
+                <div className="flex items-center text-brand-blue text-sm font-semibold opacity-0 -translate-x-4 group-hover:opacity-100 group-hover:translate-x-0 transition-all duration-300">
                   Learn More →
                 </div>
               </div>

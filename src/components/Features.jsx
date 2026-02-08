@@ -6,7 +6,7 @@ export default function Features() {
       <div className="max-w-7xl mx-auto">
         <div className="grid md:grid-cols-2 gap-8 mb-12 md:mb-16">
           <div className="flex flex-col">
-            <h2 className="text-red-accent font-bold text-2xl md:text-3xl mb-4 block">~Why Us</h2>
+            <h2 className="text-brand-blue font-bold text-2xl md:text-3xl mb-4 block">~Why Us</h2>
             <motion.h3
               initial={{ opacity: 0, x: -20 }}
               whileInView={{ opacity: 1, x: 0 }}
@@ -23,7 +23,7 @@ export default function Features() {
             className="flex items-end"
           >
             <p className="text-gray-600 max-w-lg text-sm md:text-lg leading-relaxed">
-              We understand the dynamic <span className="text-red-accent font-medium">Bangalore market</span> landscape. Our solutions are <span className="text-red-accent font-medium">scalable</span>, efficient, and engineered to drive <span className="text-red-accent font-medium">measurable business impact</span>.
+              We understand the dynamic <span className="text-brand-blue font-medium">Bangalore market</span> landscape. Our solutions are <span className="text-brand-blue font-medium">scalable</span>, efficient, and engineered to drive <span className="text-brand-blue font-medium">measurable business impact</span>.
             </p>
           </motion.div>
         </div>
@@ -37,7 +37,7 @@ export default function Features() {
             viewport={{ once: true }}
             className="feature-card border border-gray-200 p-8 bg-white hover:shadow-xl transition-all duration-300"
           >
-            <div className="w-12 h-12 mb-6 text-red-accent">
+            <div className="w-12 h-12 mb-6 text-brand-blue">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
                 <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" strokeLinecap="round" strokeLinejoin="round" />
               </svg>
@@ -54,7 +54,7 @@ export default function Features() {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.2 }}
             viewport={{ once: true }}
-            className="feature-card bg-blue-accent p-8 text-white hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2"
+            className="feature-card bg-brand-blue-deep p-8 text-white hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2"
           >
             <div className="w-12 h-12 mb-6">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
