@@ -32,6 +32,9 @@ export default function About() {
               alt="Triuss Digital Growth Agency team in Bangalore discussing tech stack, software architecture, and digital marketing strategies for scalable business growth."
               width={600}
               height={500}
+              quality={65}
+              decoding="async"
+              sizes="(max-width: 640px) 100vw, (max-width: 1024px) 40vw, 600px"
               className="w-full h-auto transition-transform duration-500 hover:scale-105"
             />
           </div>

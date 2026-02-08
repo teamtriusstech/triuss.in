@@ -48,13 +48,15 @@ export default function Hero() {
           {/* Main Image Container */}
           <div className="relative z-10 border-4 border-white shadow-2xl overflow-hidden rounded-sm">
             <Image
-              src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=1200&q=80&auto=format"
+              src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format"
               alt="Triuss Digital Marketing experts in Bangalore collaborating on custom software development and search engine optimization strategies for business growth."
               width={800}
               height={600}
               priority
+              quality={70}
+              decoding="async"
               fetchPriority="high"
-              sizes="(max-width: 768px) 100vw, 800px"
+              sizes="(max-width: 390px) 390px, (max-width: 640px) 640px, (max-width: 1024px) 50vw, 800px"
               className="w-full h-auto object-cover transform hover:scale-105 transition-transform duration-700"
             />
           </div>
