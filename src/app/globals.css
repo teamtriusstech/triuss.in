@@ -6,6 +6,7 @@
 }
 
 @theme inline {
+<<<<<<< HEAD
   --color-hero-bg: #f8fafc;
   --color-brand-blue: #002D72;
   --color-brand-blue-light: #007BFF;
@@ -18,6 +19,12 @@
   --background: #ffffff;
   --foreground: #001A42;
   --brand-gradient: linear-gradient(45deg, #FF9900, #FFB84D);
+=======
+  --color-hero-bg: #f5f3ef;
+  --color-brand-blue: #2563eb;
+  --color-brand-blue-deep: #1d4ed8;
+  --color-dark: #0a0a14;
+>>>>>>> origin/main
 }
 
 body {
@@ -27,6 +34,7 @@ body {
 }
 
 .btn-primary {
+<<<<<<< HEAD
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -81,6 +89,46 @@ body {
   border-color: rgba(255, 255, 255, 0.3);
   transform: translateY(-8px);
   box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.2), 0 10px 10px -5px rgba(0, 0, 0, 0.1);
+=======
+  position: relative;
+  background: white;
+  border: 2px solid #1a1a2e;
+  padding: 12px 24px;
+  font-weight: 600;
+  transition: all 0.3s;
+  box-shadow: 4px 4px 0px #1a1a2e;
+}
+
+.btn-primary:hover {
+  transform: translate(2px, 2px);
+  box-shadow: 2px 2px 0px #1a1a2e;
+}
+
+.btn-white {
+  position: relative;
+  background: white;
+  border: 2px solid white;
+  color: #1a1a2e;
+  padding: 10px 20px;
+  font-weight: 600;
+  transition: all 0.3s;
+  box-shadow: 4px 4px 0px rgba(0, 0, 0, 0.3);
+}
+
+.btn-white:hover {
+  transform: translate(2px, 2px);
+  box-shadow: 2px 2px 0px rgba(0, 0, 0, 0.3);
+}
+
+.service-card {
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  transition: all 0.3s;
+}
+
+.service-card:hover {
+  border-color: rgba(255, 255, 255, 0.5);
+  transform: translateY(-5px);
+>>>>>>> origin/main
 }
 
 .feature-card {

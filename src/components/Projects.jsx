@@ -1,8 +1,14 @@
 "use client";
 
+<<<<<<< HEAD
 import { useRef, useEffect } from "react";
 import Image from "next/image";
 import { ArrowUpRight } from "lucide-react";
+=======
+import { useRef, useEffect, useState } from "react";
+import Image from "next/image";
+import { ExternalLink } from "lucide-react";
+>>>>>>> origin/main
 import { motion } from "framer-motion";
 
 const clients = [
@@ -10,51 +16,84 @@ const clients = [
     name: "ASPL Tech",
     url: "https://aspltech.in",
     video: "/videos/aspl-tech.mp4",
+<<<<<<< HEAD
     image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=1200&q=80",
     desc: "A leading technology solutions provider helping businesses scale with cutting-edge software and IT services.",
     type: "TECH SOLUTIONS",
     tech: "REACT, NODE.JS",
+=======
+    image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=600&q=60",
+    desc: "A leading technology solutions provider helping businesses scale with cutting-edge software and IT services."
+>>>>>>> origin/main
   },
   {
     name: "Avant Enterprise",
     url: "https://avantenterprise.in/",
     video: "/videos/avant-enterprise.mp4",
+<<<<<<< HEAD
     image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=1200&q=80",
     desc: "Streamlining business operations with robust enterprise resource planning and management solutions.",
     type: "ENTERPRISE ERP",
     tech: "NEXT.JS, TAILWIND",
+=======
+    image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600&q=60",
+    desc: "Streamlining business operations with robust enterprise resource planning and management solutions."
+>>>>>>> origin/main
   },
   {
     name: "Blue Mind Surf School",
     url: "https://surfschool.asia",
     video: "/videos/blue-mind-surf-school.mp4",
+<<<<<<< HEAD
     image: "https://images.unsplash.com/photo-1502685104226-ee32379fefbe?w=1200&q=80",
     desc: "Connecting surf enthusiasts with professional training and unforgettable ocean experiences.",
     type: "LIFESTYLE",
     tech: "NEXT.JS, STRIPE",
+=======
+    image: "https://images.unsplash.com/photo-1502685104226-ee32379fefbe?w=600&q=60",
+    desc: "Connecting surf enthusiasts with professional training and unforgettable ocean experiences."
+>>>>>>> origin/main
   },
   {
     name: "Suraksha Hospital",
     url: "https://surakshahosp.com",
     video: "/videos/suraksha-hospital.mp4",
+<<<<<<< HEAD
     image: "https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?w=1200&q=80",
     desc: "Delivering compassionate and advanced healthcare services to the community with trust and care.",
     type: "HEALTHCARE",
     tech: "REACT, SUPABASE",
+=======
+    image: "https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?w=600&q=60",
+    desc: "Delivering compassionate and advanced healthcare services to the community with trust and care."
+>>>>>>> origin/main
   },
   {
     name: "Angels Empyrean School",
     url: "https://angels-empyrean.netlify.app/",
     video: "/videos/angels-empyrean-school.mp4",
+<<<<<<< HEAD
     image: "https://images.unsplash.com/photo-1503676260728-1c00da094a0b?w=1200&q=80",
     desc: "A nurturing educational environment focused on holistic development and academic excellence.",
     type: "EDUCATION",
     tech: "VITE, TAILWIND",
+=======
+    image: "https://images.unsplash.com/photo-1503676260728-1c00da094a0b?w=600&q=60",
+    desc: "A nurturing educational environment focused on holistic development and academic excellence."
+  },
+  {
+    name: "Srinath Parameswaran",
+    url: "https://srinathparameswaran.com",
+    video: "/videos/portfolio.mp4",
+    image: "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=600&q=60",
+    desc: "Showcasing the personal brand and professional portfolio of a visionary leader and thinker."
+>>>>>>> origin/main
   },
   {
     name: "Nadayoga",
     url: "https://nadayoga.website/",
     video: "/videos/nadayoga.mp4",
+<<<<<<< HEAD
     image: "https://images.unsplash.com/photo-1545205569-0d3454124973?w=1200&q=80",
     desc: "Promoting wellness and inner peace through the ancient practice of Nada Yoga and sound healing.",
     type: "WELLNESS",
@@ -86,6 +125,24 @@ const clients = [
     desc: "A specialized platform showcasing authentic Middle Eastern flavors and culinary excellence in Bangalore.",
     type: "FOOD & BEVERAGE",
     tech: "VITE, SUPABASE",
+=======
+    image: "https://images.unsplash.com/photo-1545205569-0d3454124973?w=600&q=60",
+    desc: "Promoting wellness and inner peace through the ancient practice of Nada Yoga and sound healing."
+  },
+  {
+    name: "Bienvenu",
+    url: "https://angels-empyrean.netlify.app/",
+    video: "/videos/bienvenu.mp4",
+    image: "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=600&q=60",
+    desc: "Creating elegant and immersive digital experiences for luxury hospitality and lifestyle brands."
+  },
+  {
+    name: "8hands",
+    url: "https://eighthands.netlify.app/",
+    video: "/videos/eighthands.mp4",
+    image: "https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?w=600&q=60",
+    desc: "A collaborative platform connecting creative minds to build, share, and innovate together. (Work In Process)"
+>>>>>>> origin/main
   }
 ];
 
@@ -121,12 +178,20 @@ function ProjectCard({ client, index }) {
     <motion.div
       initial={{ opacity: 0, y: 30 }}
       whileInView={{ opacity: 1, y: 0 }}
+<<<<<<< HEAD
       transition={{ duration: 0.8, delay: index * 0.1 }}
       viewport={{ once: true }}
       className="group relative h-[380px] md:h-[450px] w-full rounded-2xl overflow-hidden bg-[#0d0d0d] border border-white/10"
     >
       {/* Background (Video/Image) */}
       <div className="absolute inset-0 z-0">
+=======
+      transition={{ duration: 0.5, delay: index * 0.1 }}
+      viewport={{ once: true }}
+      className="group block relative overflow-hidden rounded-xl bg-white shadow-lg border border-gray-100 hover:shadow-2xl transition-all duration-300 flex flex-col h-full"
+    >
+      <div className="relative aspect-video w-full overflow-hidden bg-gray-100">
+>>>>>>> origin/main
         {client.video ? (
           <video
             ref={videoRef}
@@ -136,11 +201,18 @@ function ProjectCard({ client, index }) {
             playsInline
             preload="none"
             poster={client.image}
+<<<<<<< HEAD
             className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+=======
+            title={`Success story video for ${client.name}`}
+            aria-label={`Success story video for ${client.name}`}
+            className="w-full h-full object-cover"
+>>>>>>> origin/main
           />
         ) : (
           <Image
             src={client.image}
+<<<<<<< HEAD
             alt={client.name}
             fill
             className="object-cover transition-transform duration-700 group-hover:scale-105 opacity-60"
@@ -175,10 +247,33 @@ function ProjectCard({ client, index }) {
 
       {/* Top Right External Link */}
       <div className="absolute top-6 right-6 z-20">
+=======
+            alt={`${client.name} - Case study of digital growth and website development by Triuss Bangalore`}
+            fill
+            sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
+            className="object-cover transform group-hover:scale-110 transition-transform duration-500"
+          />
+        )}
+
+        <div className="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+          <a href={client.url} target="_blank" rel="noopener noreferrer" className="bg-white/90 p-3 rounded-full hover:bg-brand-blue hover:text-white transition-colors" aria-label={`Visit ${client.name} website`}>
+            <ExternalLink className="w-6 h-6" />
+          </a>
+        </div>
+      </div>
+      <div className="p-5 flex flex-col flex-grow">
+        <h3 className="text-xl font-bold text-gray-900 group-hover:text-brand-blue transition-colors mb-2">
+          {client.name}
+        </h3>
+        <p className="text-sm text-gray-600 mb-4 flex-grow leading-relaxed line-clamp-3">
+          {client.desc}
+        </p>
+>>>>>>> origin/main
         <a
           href={client.url}
           target="_blank"
           rel="noopener noreferrer"
+<<<<<<< HEAD
           className="w-10 h-10 rounded-full bg-white/5 border border-white/10 flex items-center justify-center text-white opacity-0 group-hover:opacity-100 transition-all duration-300 transform translate-y-2 group-hover:translate-y-0"
         >
           <ArrowUpRight className="w-5 h-5" />
@@ -187,12 +282,21 @@ function ProjectCard({ client, index }) {
 
       {/* Hover Status Bar (Bottom) */}
       <div className="absolute bottom-0 left-0 h-1 bg-brand-blue w-0 group-hover:w-full transition-all duration-700" />
+=======
+          aria-label={`Visit ${client.name} website`}
+          className="inline-flex items-center justify-center gap-2 w-full py-2 px-4 bg-gray-900 text-white text-sm font-medium rounded hover:bg-brand-blue transition-colors"
+        >
+          Visit Site <ExternalLink className="w-3 h-3" />
+        </a>
+      </div>
+>>>>>>> origin/main
     </motion.div>
   );
 }
 
 export default function Projects() {
   return (
+<<<<<<< HEAD
     <section id="work" className="py-20 md:py-32 px-6 bg-[#0a0a0a] overflow-hidden">
       <div className="max-w-7xl mx-auto">
         <div className="flex flex-col md:flex-row md:items-end justify-between gap-8 mb-20 px-2">
@@ -227,10 +331,33 @@ export default function Projects() {
 
         {/* 2 Column Grid for the specific rectangular size in the reference */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-12">
+=======
+    <section id="work" className="py-12 px-4 md:py-24 md:px-6 bg-gray-50">
+      <div className="max-w-[1600px] mx-auto">
+        <div className="text-center mb-10 md:mb-16">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6 }}
+            viewport={{ once: true }}
+          >
+            <h2 className="text-brand-blue font-bold text-2xl md:text-3xl mb-4 block">~Our Work</h2>
+            <h3 className="text-4xl md:text-6xl font-bold text-gray-900 mb-6">
+              Our Valuable Clients & Success Stories
+            </h3>
+            <p className="text-gray-600 max-w-4xl mx-auto text-sm md:text-lg leading-relaxed">
+              We take pride in helping diverse businesses establish their <span className="text-brand-blue font-medium">digital presence</span>. Here are some of the high-performance solutions we've <span className="text-brand-blue font-medium">delivered</span> to our partners.
+            </p>
+          </motion.div>
+        </div>
+
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
+>>>>>>> origin/main
           {clients.map((client, index) => (
             <ProjectCard key={index} client={client} index={index} />
           ))}
         </div>
+<<<<<<< HEAD
 
         {/* Bottom CTA */}
         <motion.div
@@ -252,6 +379,8 @@ export default function Projects() {
             </div>
           </a>
         </motion.div>
+=======
+>>>>>>> origin/main
       </div>
     </section>
   );
