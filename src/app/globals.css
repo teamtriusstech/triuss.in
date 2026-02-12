@@ -1,0 +1,124 @@
+@import "tailwindcss";
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@theme inline {
+  --color-hero-bg: #f8fafc;
+  --color-brand-blue: #002D72;
+  --color-brand-blue-light: #007BFF;
+  --color-brand-orange: #FF9900;
+  --color-brand-orange-light: #FFB84D;
+  --color-dark: #001A42;
+}
+
+:root {
+  --background: #ffffff;
+  --foreground: #001A42;
+  --brand-gradient: linear-gradient(45deg, #FF9900, #FFB84D);
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  overflow-x: hidden;
+}
+
+.btn-primary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--brand-gradient);
+  color: white;
+  padding: 12px 28px;
+  font-weight: 700;
+  border-radius: 9999px;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0 4px 15px -3px rgba(255, 153, 0, 0.3);
+  border: none;
+  position: relative;
+  overflow: hidden;
+}
+
+.btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 20px -5px rgba(255, 153, 0, 0.4);
+  filter: brightness(1.05);
+}
+
+.btn-white {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  color: var(--color-brand-blue);
+  padding: 12px 28px;
+  font-weight: 700;
+  border-radius: 9999px;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+  border: 2px solid var(--color-brand-blue);
+}
+
+.btn-white:hover {
+  background-color: var(--color-brand-blue);
+  color: white;
+  transform: translateY(-2px);
+  box-shadow: 0 10px 15px -3px rgba(0, 45, 114, 0.2);
+}
+
+.service-card {
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  background: rgba(255, 255, 255, 0.03);
+  backdrop-filter: blur(10px);
+  border-radius: 16px;
+  transition: all 0.4s ease;
+}
+
+.service-card:hover {
+  border-color: rgba(255, 255, 255, 0.3);
+  transform: translateY(-8px);
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.2), 0 10px 10px -5px rgba(0, 0, 0, 0.1);
+}
+
+.feature-card {
+  transition: all 0.3s;
+}
+
+.feature-card:hover {
+  transform: translateY(-5px);
+}
+
+.project-card {
+  overflow: hidden;
+  position: relative;
+}
+
+.project-card img {
+  transition: transform 0.5s;
+}
+
+.project-card:hover img {
+  transform: scale(1.05);
+}
+
+.input-underline {
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+  padding: 12px 0;
+  color: white;
+  width: 100%;
+  outline: none;
+  transition: border-color 0.3s;
+}
+
+.input-underline:focus {
+  border-bottom-color: white;
+}
+
+.input-underline::placeholder {
+  color: rgba(255, 255, 255, 0.7);
+}

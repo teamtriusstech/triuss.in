@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 120" fill="none">
+  <text x="10" y="85" font-family="'Inter', 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-weight="800" font-size="72" fill="#1a1a1a">TR</text>
+  <rect x="125" y="45" width="12" height="45" rx="6" fill="#2563eb" />
+  <rect x="150" y="25" width="12" height="85" rx="6" fill="#2563eb" />
+  <rect x="175" y="45" width="12" height="45" rx="6" fill="#2563eb" />
+  <text x="210" y="85" font-family="'Inter', 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-weight="800" font-size="72" fill="#1a1a1a">USS</text>
+</svg>
