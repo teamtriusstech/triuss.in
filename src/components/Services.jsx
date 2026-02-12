@@ -1,10 +1,6 @@
 "use client";
 
-<<<<<<< HEAD
 import { Monitor, ShoppingBag, MessageCircle, Search, MapPin, Share2, Phone, FileText, ArrowUpRight } from "lucide-react";
-=======
-import { Monitor, ShoppingBag, MessageCircle, Search, MapPin, Share2, Phone, FileText } from "lucide-react";
->>>>>>> origin/main
 import Link from "next/link";
 import Image from "next/image";
 import { motion } from "framer-motion";
@@ -70,7 +66,6 @@ const services = [
 
 export default function Services() {
   return (
-<<<<<<< HEAD
     <section id="services" className="bg-[#0a0a0a] py-20 md:py-32 px-6 relative overflow-hidden">
       {/* Background Ambient Glow */}
       <div className="absolute top-0 left-0 w-1/2 h-1/2 bg-brand-blue/5 blur-[120px] pointer-events-none -translate-x-1/4 -translate-y-1/4" />
@@ -78,18 +73,12 @@ export default function Services() {
 
       <div className="max-w-7xl mx-auto relative z-10">
         <div className="text-center mb-16 md:mb-24">
-=======
-    <section id="services" className="bg-dark py-16 md:py-24 px-6 relative">
-      <div className="max-w-7xl mx-auto">
-        <div className="text-center mb-12 md:mb-16">
->>>>>>> origin/main
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
             viewport={{ once: true }}
           >
-<<<<<<< HEAD
             <div className="inline-flex items-center gap-3 mb-6">
               <span className="h-px w-8 bg-brand-orange"></span>
               <span className="text-brand-orange font-black uppercase tracking-[0.2em] text-[10px] md:text-xs">Our Services</span>
@@ -98,16 +87,7 @@ export default function Services() {
               Scale Your <span className="text-white/30 italic font-serif">Impact</span> Digitally.
             </h2>
             <p className="text-gray-400 max-w-3xl mx-auto text-sm md:text-lg leading-relaxed">
-              We provide the strategic firepower and technical execution to help businesses in <span className="text-brand-blue font-bold text-white">Bangalore</span> dominate their market. From engineering to growth, we've got you covered.
-=======
-            <h1 className="text-brand-blue font-bold text-2xl md:text-3xl mb-4 block">~Our Services</h1>
-            <h2 className="text-4xl md:text-6xl font-bold text-white mb-6">
-              Comprehensive Digital Growth Solutions
-            </h2>
-            <p className="text-gray-400 max-w-4xl mx-auto text-sm md:text-lg leading-relaxed">
-              From high-performance <span className="text-brand-blue">website development</span> and e-commerce solutions to advanced SEO, WhatsApp commerce, and integrated management systems, we provide the tools businesses in <span className="text-brand-blue">Bangalore</span> need to <span className="text-brand-blue">dominate their market</span>.
-              Helping businesses scale with precision and expert digital strategies.
->>>>>>> origin/main
+              We provide the strategic firepower and technical execution to help businesses in <span className="text-white font-bold">Bangalore</span> dominate their market. From engineering to growth, we've got you covered.
             </p>
           </motion.div>
         </div>
@@ -121,7 +101,6 @@ export default function Services() {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: index * 0.1 }}
               viewport={{ once: true }}
-<<<<<<< HEAD
               className="group relative overflow-hidden rounded-2xl bg-[#111111] border border-white/5 hover:border-brand-blue/30 transition-all duration-500 flex flex-col h-full"
             >
               {/* Image Container with Dark Overlay */}
@@ -138,32 +117,12 @@ export default function Services() {
 
                 {/* Corner Icon */}
                 <div className="absolute top-4 left-4 bg-[#1a1a1a] p-2.5 rounded-xl border border-white/10 group-hover:bg-brand-blue group-hover:border-brand-blue transition-all duration-300">
-=======
-              className="service-card group relative overflow-hidden rounded-2xl bg-white/5 border border-white/10 hover:border-brand-blue/50 transition-all duration-300 scroll-mt-24 h-full flex flex-col"
-            >
-              {/* Image Container */}
-              <div className="relative h-48 w-full overflow-hidden">
-                <Image
-                  src={service.image}
-                  alt={`${service.title} - Expert digital solution by Triuss Bangalore to help businesses scale and optimize their online presence.`}
-                  fill
-                  quality={65}
-                  loading="lazy"
-                  sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
-                  className="object-cover transition-transform duration-500 group-hover:scale-110"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-dark/90 to-transparent opacity-60" />
-
-                {/* Floating Icon */}
-                <div className="absolute bottom-4 right-4 bg-brand-blue p-3 rounded-full shadow-lg transform translate-y-2 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-300">
->>>>>>> origin/main
                   {service.icon}
                 </div>
               </div>
 
               {/* Content */}
               <div className="p-6 flex flex-col flex-grow">
-<<<<<<< HEAD
                 <h3 className="text-white font-bold mb-3 text-xl group-hover:text-brand-orange transition-colors">
                   {service.title}
                 </h3>
@@ -177,23 +136,10 @@ export default function Services() {
 
               {/* Hover Line Animation */}
               <div className="absolute bottom-0 left-0 w-0 h-1 bg-brand-blue group-hover:w-full transition-all duration-500" />
-=======
-                <h3 className="text-white font-bold mb-3 text-xl group-hover:text-brand-blue transition-colors">
-                  {service.title}
-                </h3>
-                <p className="text-gray-400 text-sm leading-relaxed mb-4 flex-grow">
-                  {service.desc}
-                </p>
-                <div className="flex items-center text-brand-blue text-sm font-semibold opacity-0 -translate-x-4 group-hover:opacity-100 group-hover:translate-x-0 transition-all duration-300">
-                  Learn More →
-                </div>
-              </div>
->>>>>>> origin/main
             </motion.div>
           ))}
         </div>
 
-<<<<<<< HEAD
         <div className="text-center mt-20">
           <Link href="/#contact" className="inline-flex items-center gap-4 group">
             <span className="text-white font-bold text-lg md:text-xl border-b border-white/10 group-hover:border-brand-orange transition-colors pb-1">
@@ -202,11 +148,6 @@ export default function Services() {
             <div className="w-10 h-10 rounded-full border border-white/20 flex items-center justify-center text-white group-hover:bg-brand-orange group-hover:border-brand-orange transition-all duration-300 transform group-hover:rotate-45">
               <ArrowUpRight className="w-5 h-5" />
             </div>
-=======
-        <div className="text-center mt-16">
-          <Link href="/#contact" className="btn-primary inline-block">
-            Get Started →
->>>>>>> origin/main
           </Link>
         </div>
       </div>
