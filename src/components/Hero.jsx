@@ -99,14 +99,14 @@ export default function Hero() {
             initial={{ opacity: 0, x: -20 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.5, delay: 0.8 }}
-            className="absolute -bottom-6 -left-4 md:-bottom-12 md:-left-12 bg-white p-4 md:p-6 rounded-xl shadow-xl border border-gray-100 flex items-center gap-4 max-w-[200px] md:max-w-xs"
+            className="absolute -bottom-6 -left-4 md:-bottom-12 md:-left-12 bg-white p-2 md:p-6 rounded-xl shadow-xl border border-gray-100 flex items-center gap-2 md:gap-4 max-w-[140px] md:max-w-xs"
           >
-            <div className="bg-brand-orange/10 p-3 rounded-full text-brand-orange">
-              <TrendingUp className="w-6 h-6" />
+            <div className="bg-brand-orange/10 p-1.5 md:p-3 rounded-full text-brand-orange">
+              <TrendingUp className="w-4 h-4 md:w-6 md:h-6" />
             </div>
             <div>
-              <div className="text-2xl font-bold text-gray-900">300%</div>
-              <div className="text-xs text-brand-orange font-bold uppercase tracking-wide">Avg. ROI Growth</div>
+              <div className="text-base md:text-2xl font-bold text-gray-900 leading-none mb-0.5">300%</div>
+              <div className="text-[10px] md:text-xs text-brand-orange font-bold uppercase tracking-wide leading-none">Avg. ROI Growth</div>
             </div>
           </motion.div>
 
@@ -115,14 +115,14 @@ export default function Hero() {
             initial={{ opacity: 0, x: 20 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.5, delay: 1 }}
-            className="absolute -top-6 -right-4 md:-top-12 md:-right-12 bg-white p-4 md:p-6 rounded-xl shadow-xl border border-gray-100 hidden md:flex items-center gap-4"
+            className="absolute -top-6 -right-4 md:-top-12 md:-right-12 bg-white p-2 md:p-6 rounded-xl shadow-xl border border-gray-100 flex items-center gap-2 md:gap-4 max-w-[140px] md:max-w-xs"
           >
-            <div className="bg-blue-100 p-3 rounded-full text-brand-blue">
-              <Users className="w-6 h-6" />
+            <div className="bg-blue-100 p-1.5 md:p-3 rounded-full text-brand-blue">
+              <Users className="w-4 h-4 md:w-6 md:h-6" />
             </div>
             <div>
-              <div className="text-2xl font-bold text-gray-900">150+</div>
-              <div className="text-xs text-gray-500 font-medium uppercase tracking-wide">Happy Clients</div>
+              <div className="text-base md:text-2xl font-bold text-gray-900 leading-none mb-0.5">150+</div>
+              <div className="text-[10px] md:text-xs text-gray-500 font-medium uppercase tracking-wide leading-none">Happy Clients</div>
             </div>
           </motion.div>
         </motion.div>

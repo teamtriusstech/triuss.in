@@ -92,7 +92,7 @@ export default function Contact() {
                   <input
                     type="text"
                     name="name"
-                    placeholder="John Doe"
+                    placeholder="Your Name"
                     className="w-full bg-gray-50 border border-gray-200 rounded-xl px-4 py-3 text-gray-900 placeholder:text-gray-400 focus:outline-none focus:border-brand-blue focus:ring-1 focus:ring-brand-blue transition-all font-medium"
                     required
                   />
@@ -102,7 +102,7 @@ export default function Contact() {
                   <input
                     type="tel"
                     name="phone"
-                    placeholder="+91 99999 00000"
+                    placeholder="Your Phone"
                     className="w-full bg-gray-50 border border-gray-200 rounded-xl px-4 py-3 text-gray-900 placeholder:text-gray-400 focus:outline-none focus:border-brand-blue focus:ring-1 focus:ring-brand-blue transition-all font-medium"
                   />
                 </div>
@@ -113,7 +113,7 @@ export default function Contact() {
                 <input
                   type="email"
                   name="email"
-                  placeholder="john@company.com"
+                  placeholder="Your Email"
                   className="w-full bg-gray-50 border border-gray-200 rounded-xl px-4 py-3 text-gray-900 placeholder:text-gray-400 focus:outline-none focus:border-brand-blue focus:ring-1 focus:ring-brand-blue transition-all font-medium"
                   required
                 />

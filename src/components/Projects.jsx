@@ -2,7 +2,8 @@
 
 import { useRef, useEffect } from "react";
 import Image from "next/image";
-import { ArrowUpRight } from "lucide-react";
+import Link from "next/link";
+import { Link as LinkIcon, ArrowUpRight } from "lucide-react";
 import { motion } from "framer-motion";
 
 const clients = [
@@ -10,82 +11,65 @@ const clients = [
     name: "ASPL Tech",
     url: "https://aspltech.in",
     video: "/videos/aspl-tech.mp4",
-    image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=1200&q=80",
+    image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=600&q=60",
     desc: "A leading technology solutions provider helping businesses scale with cutting-edge software and IT services.",
-    type: "TECH SOLUTIONS",
-    tech: "REACT, NODE.JS",
+    tags: ["TECH SOLUTIONS", "REACT, NODE.JS"]
   },
   {
     name: "Avant Enterprise",
     url: "https://avantenterprise.in/",
     video: "/videos/avant-enterprise.mp4",
-    image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=1200&q=80",
+    image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600&q=60",
     desc: "Streamlining business operations with robust enterprise resource planning and management solutions.",
-    type: "ENTERPRISE ERP",
-    tech: "NEXT.JS, TAILWIND",
+    tags: ["ENTERPRISE ERP", "NEXT.JS, TAILWIND"]
   },
   {
     name: "Blue Mind Surf School",
     url: "https://surfschool.asia",
     video: "/videos/blue-mind-surf-school.mp4",
-    image: "https://images.unsplash.com/photo-1502685104226-ee32379fefbe?w=1200&q=80",
+    image: "https://images.unsplash.com/photo-1502685104226-ee32379fefbe?w=600&q=60",
     desc: "Connecting surf enthusiasts with professional training and unforgettable ocean experiences.",
-    type: "LIFESTYLE",
-    tech: "NEXT.JS, STRIPE",
+    tags: ["LIFESTYLE", "NEXT.JS, STRIPE"]
   },
   {
     name: "Suraksha Hospital",
     url: "https://surakshahosp.com",
     video: "/videos/suraksha-hospital.mp4",
-    image: "https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?w=1200&q=80",
+    image: "https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?w=600&q=60",
     desc: "Delivering compassionate and advanced healthcare services to the community with trust and care.",
-    type: "HEALTHCARE",
-    tech: "REACT, SUPABASE",
+    tags: ["HEALTHCARE", "REACT, SUPABASE"]
   },
   {
     name: "Angels Empyrean School",
     url: "https://angels-empyrean.netlify.app/",
     video: "/videos/angels-empyrean-school.mp4",
-    image: "https://images.unsplash.com/photo-1503676260728-1c00da094a0b?w=1200&q=80",
+    image: "https://images.unsplash.com/photo-1503676260728-1c00da094a0b?w=600&q=60",
     desc: "A nurturing educational environment focused on holistic development and academic excellence.",
-    type: "EDUCATION",
-    tech: "VITE, TAILWIND",
-  },
-  {
-    name: "Nadayoga",
-    url: "https://nadayoga.website/",
-    video: "/videos/nadayoga.mp4",
-    image: "https://images.unsplash.com/photo-1545205569-0d3454124973?w=1200&q=80",
-    desc: "Promoting wellness and inner peace through the ancient practice of Nada Yoga and sound healing.",
-    type: "WELLNESS",
-    tech: "NEXT.JS, FRAMER",
-  },
-  {
-    name: "Eight Hands Work",
-    url: "https://eighthandswork.com",
-    video: "/videos/eighthands.mp4",
-    image: "https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?w=1200&q=80",
-    desc: "Innovative interior design studio delivering refined, sustainable, and functional spaces across Bangalore.",
-    type: "INTERIOR DESIGN",
-    tech: "REACT, MOTION",
-  },
-  {
-    name: "Bienvenu Apartments",
-    url: "https://bienvenu.in",
-    video: "/videos/bienvenu.mp4",
-    image: "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?w=1200&q=80",
-    desc: "Luxury apartment rental and management services offering premium stays in the heart of the city.",
-    type: "RENTAL SERVICE",
-    tech: "NEXT.JS, PRISMIC",
+    tags: ["EDUCATION", "VITE, TAILWIND"]
   },
   {
     name: "Kunafa View",
-    url: "https://kunafaview.com",
-    video: "/videos/kunafa.mp4",
-    image: "https://images.unsplash.com/photo-1515023115689-585010d6d445?w=1200&q=80",
+    url: "#",
+    video: null,
+    image: "https://images.unsplash.com/photo-1576618148400-f54bed99fcf8?w=600&q=60",
     desc: "A specialized platform showcasing authentic Middle Eastern flavors and culinary excellence in Bangalore.",
-    type: "FOOD & BEVERAGE",
-    tech: "VITE, SUPABASE",
+    tags: ["FOOD & BEVERAGE", "VITE, SUPABASE"]
+  },
+  {
+    name: "Bienvenu Apartments",
+    url: "https://angels-empyrean.netlify.app/",
+    video: "/videos/bienvenu.mp4",
+    image: "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=600&q=60",
+    desc: "Luxury apartment rental and management services offering premium stays in the heart of the city.",
+    tags: ["RENTAL SERVICE", "NEXT.JS, PRISMIC"]
+  },
+  {
+    name: "Eight Hands Work",
+    url: "https://eighthands.netlify.app/",
+    video: "/videos/eighthands.mp4",
+    image: "https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?w=600&q=60",
+    desc: "Innovative interior design studio delivering refined, sustainable, and functional spaces across Bangalore.",
+    tags: ["INTERIOR DESIGN", "REACT, MOTION"]
   }
 ];
 
@@ -118,15 +102,18 @@ function ProjectCard({ client, index }) {
   }, [client.video]);
 
   return (
-    <motion.div
+    <motion.a
+      href={client.url}
+      target="_blank"
+      rel="noopener noreferrer"
       initial={{ opacity: 0, y: 30 }}
       whileInView={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.8, delay: index * 0.1 }}
+      transition={{ duration: 0.5, delay: index * 0.1 }}
       viewport={{ once: true }}
-      className="group relative h-[380px] md:h-[450px] w-full rounded-2xl overflow-hidden bg-[#0d0d0d] border border-white/10"
+      className="group block relative h-[450px] w-full overflow-hidden rounded-3xl bg-gray-900 border border-white/10"
     >
-      {/* Background (Video/Image) */}
-      <div className="absolute inset-0 z-0">
+      {/* Media Layer */}
+      <div className="absolute inset-0 w-full h-full bg-[#1c1c1c]">
         {client.video ? (
           <video
             ref={videoRef}
@@ -143,114 +130,96 @@ function ProjectCard({ client, index }) {
             src={client.image}
             alt={client.name}
             fill
-            className="object-cover transition-transform duration-700 group-hover:scale-105 opacity-60"
+            sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
+            className="object-cover object-top transition-[object-position] duration-[2500ms] ease-in-out group-hover:object-bottom"
           />
         )}
-        {/* Dark Overlays */}
-        <div className="absolute inset-0 bg-black/40 group-hover:bg-black/30 transition-colors duration-500" />
-        <div className="absolute inset-0 bg-gradient-to-t from-[#0a0a0a] via-[#0a0a0a]/40 to-transparent" />
       </div>
 
-      {/* Content Overlay - Exactly as Reference */}
-      <div className="relative z-10 h-full p-6 md:p-10 flex flex-col justify-end items-start text-left">
+      {/* Overlay Gradient */}
+      <div className="absolute inset-0 bg-gradient-to-t from-black via-black/40 to-transparent transition-opacity duration-300 pointer-events-none" />
 
-        {/* Badges */}
-        <div className="flex items-center gap-2 mb-4">
-          <span className="bg-white text-black text-[9px] md:text-[10px] font-black px-3 py-1.5 rounded-full tracking-tight uppercase whitespace-nowrap">
-            {client.type}
-          </span>
-          <span className="text-white/60 text-[9px] md:text-[10px] font-bold px-3 py-1.5 rounded-full border border-white/20 backdrop-blur-sm tracking-tight uppercase whitespace-nowrap">
-            {client.tech}
-          </span>
+      {/* Content Layer */}
+      <div className="absolute bottom-0 left-0 w-full p-8 flex flex-col items-start justify-end h-full">
+        {/* Tags */}
+        <div className="flex flex-wrap gap-2 mb-4 opacity-100 transform translate-y-0 transition-transform duration-500">
+          {client.tags.map((tag, i) => (
+            <span key={i} className="px-4 py-1.5 bg-white text-black text-[10px] md:text-xs font-bold rounded-full uppercase tracking-wider">
+              {tag}
+            </span>
+          ))}
         </div>
 
-        <h3 className="text-2xl md:text-4xl font-black text-white tracking-tighter mb-3 group-hover:text-brand-orange transition-colors">
-          {client.name}
-        </h3>
+        {/* Title */}
+        <div className="flex items-center justify-between w-full mb-2">
+          <h3 className="text-3xl font-bold text-white leading-tight">
+            {client.name}
+          </h3>
+          <div className="bg-white/20 p-2 rounded-full backdrop-blur-sm opacity-0 group-hover:opacity-100 transition-all duration-300 transform translate-x-4 group-hover:translate-x-0">
+            <ArrowUpRight className="text-white w-6 h-6" />
+          </div>
+        </div>
 
-        <p className="text-white/60 text-xs md:text-sm leading-relaxed max-w-xl line-clamp-2 transition-all duration-300 group-hover:line-clamp-none">
+        {/* Description */}
+        <p className="text-gray-300 text-sm md:text-base leading-relaxed line-clamp-2 max-w-sm">
           {client.desc}
         </p>
       </div>
-
-      {/* Top Right External Link */}
-      <div className="absolute top-6 right-6 z-20">
-        <a
-          href={client.url}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="w-10 h-10 rounded-full bg-white/5 border border-white/10 flex items-center justify-center text-white opacity-0 group-hover:opacity-100 transition-all duration-300 transform translate-y-2 group-hover:translate-y-0"
-        >
-          <ArrowUpRight className="w-5 h-5" />
-        </a>
-      </div>
-
-      {/* Hover Status Bar (Bottom) */}
-      <div className="absolute bottom-0 left-0 h-1 bg-brand-blue w-0 group-hover:w-full transition-all duration-700" />
-    </motion.div>
+    </motion.a>
   );
 }
 
 export default function Projects() {
   return (
-    <section id="work" className="py-20 md:py-32 px-6 bg-[#0a0a0a] overflow-hidden">
-      <div className="max-w-7xl mx-auto">
-        <div className="flex flex-col md:flex-row md:items-end justify-between gap-8 mb-20 px-2">
+    <section id="work" className="py-20 md:py-32 px-6 bg-black text-white">
+      <div className="max-w-[1600px] mx-auto">
+
+        {/* Header Section */}
+        <div className="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-8">
           <motion.div
             initial={{ opacity: 0, x: -20 }}
             whileInView={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.6 }}
             viewport={{ once: true }}
-            className="max-w-2xl"
+            className="max-w-4xl"
           >
-            <div className="inline-flex items-center gap-3 mb-4">
-              <span className="h-px w-8 bg-brand-blue"></span>
-              <span className="text-brand-blue font-black uppercase tracking-[0.2em] text-[10px] md:text-xs">
-                Our Work
-              </span>
-            </div>
-            <h2 className="text-4xl md:text-7xl font-black text-white leading-tight">
-              Selected <span className="text-white/20 italic font-serif">Success</span> Stories.
+            <p className="text-brand-blue font-bold tracking-widest text-sm mb-4 uppercase">Our Work</p>
+            <h2 className="text-5xl md:text-7xl lg:text-8xl font-black text-white tracking-tighter leading-none">
+              Selected <span className="font-serif italic font-normal opacity-90">Success</span><br />
+              Stories.
             </h2>
           </motion.div>
 
           <motion.p
             initial={{ opacity: 0, x: 20 }}
             whileInView={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.6 }}
             viewport={{ once: true }}
-            className="text-white/40 max-w-sm text-sm md:text-base leading-relaxed md:text-right"
+            transition={{ delay: 0.2 }}
+            className="text-gray-400 text-lg md:text-xl max-w-xl leading-relaxed md:text-right pb-2"
           >
             We partner with forward-thinking businesses to build digital products that move the needle.
           </motion.p>
         </div>
 
-        {/* 2 Column Grid for the specific rectangular size in the reference */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-12">
+        {/* Projects Grid */}
+        <div className="grid md:grid-cols-2 gap-8 lg:gap-10 mb-20 md:mb-32">
           {clients.map((client, index) => (
             <ProjectCard key={index} client={client} index={index} />
           ))}
         </div>
 
-        {/* Bottom CTA */}
+        {/* CTA Section */}
         <motion.div
-          initial={{ opacity: 0, y: 20 }}
+          initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6 }}
           viewport={{ once: true }}
-          className="mt-24 text-center"
+          className="flex flex-col md:flex-row items-center justify-center gap-6 text-center md:text-left"
         >
-          <a
-            href="/#contact"
-            className="inline-flex items-center gap-6 group"
-          >
-            <span className="text-white font-bold text-xl md:text-4xl border-b-4 border-white/5 group-hover:border-brand-blue transition-colors pb-2">
-              Have a project in mind?
-            </span>
-            <div className="w-12 h-12 md:w-16 md:h-16 rounded-full border border-white/10 flex items-center justify-center text-white group-hover:bg-white group-hover:text-black transition-all duration-300 transform group-hover:rotate-45">
-              <ArrowUpRight className="w-6 h-6 md:w-10 md:h-10" />
-            </div>
-          </a>
+          <h3 className="text-3xl md:text-5xl font-bold text-white tracking-tight">
+            Have a project in mind?
+          </h3>
+          <Link href="/#contact" className="group flex items-center justify-center w-16 h-16 rounded-full border border-white/20 hover:bg-white hover:text-black hover:scale-110 transition-all duration-300">
+            <ArrowUpRight className="w-8 h-8 transition-transform duration-300 group-hover:rotate-45" />
+          </Link>
         </motion.div>
       </div>
     </section>

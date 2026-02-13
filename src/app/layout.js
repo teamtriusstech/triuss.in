@@ -15,6 +15,10 @@ export const metadata = {
   alternates: {
     canonical: '/',
   },
+  icons: {
+    icon: '/icon.png',
+    apple: '/icon.png',
+  },
   openGraph: {
     title: "Triuss - #1 Digital Growth Agency in Bangalore",
     description: "Empowering businesses in Bangalore to scale with custom web development and expert SEO.",

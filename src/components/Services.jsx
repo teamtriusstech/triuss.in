@@ -1,6 +1,6 @@
 "use client";
 
-import { Monitor, ShoppingBag, MessageCircle, Search, MapPin, Share2, Phone, FileText, ArrowUpRight } from "lucide-react";
+import { Monitor, ShoppingBag, MessageCircle, Search, MapPin, Share2, Phone, FileText, ArrowRight, Sparkles } from "lucide-react";
 import Link from "next/link";
 import Image from "next/image";
 import { motion } from "framer-motion";
@@ -9,147 +9,152 @@ const services = [
   {
     id: "website-development",
     title: "Website Development",
-    icon: <Monitor className="w-6 h-6 text-white" />,
+    icon: <Monitor className="w-5 h-5" />,
     image: "/images/web_development_new.png",
-    desc: "Our expert website development team builds fast, secure, and SEO-optimized websites tailored for small businesses and enterprises in Bangalore to establish a strong online presence."
+    desc: "Build fast, secure, and SEO-optimized websites tailored for strong online presence."
   },
   {
     id: "ecommerce-solutions",
     title: "E-Commerce Solutions",
-    icon: <ShoppingBag className="w-6 h-6 text-white" />,
+    icon: <ShoppingBag className="w-5 h-5" />,
     image: "/images/ecommerce_new.png",
-    desc: "We build modern, user-friendly e-commerce platforms that integrate secure payment gateways, inventory management, and smooth checkout experiences to drive online sales."
+    desc: "Modern platforms with secure payments and inventory management to drive sales."
   },
   {
     id: "whatsapp-commerce",
     title: "WhatsApp Commerce",
-    icon: <MessageCircle className="w-6 h-6 text-white" />,
+    icon: <MessageCircle className="w-5 h-5" />,
     image: "/images/whatsapp_commerce_new.png",
-    desc: "Manage inquiries, orders, and follow-ups efficiently using WhatsApp automation."
+    desc: "Automate inquiries, orders, and follow-ups efficiently on WhatsApp."
   },
   {
     id: "seo-services",
     title: "SEO Services",
-    icon: <Search className="w-6 h-6 text-white" />,
+    icon: <Search className="w-5 h-5" />,
     image: "/images/seo_google_business_new.png",
-    desc: "Steady and sustainable growth strategies to help customers find you online."
+    desc: "Sustainable strategies to help customers find you organically online."
   },
   {
     id: "google-business-profile",
     title: "Google Business Profile",
-    icon: <MapPin className="w-6 h-6 text-white" />,
+    icon: <MapPin className="w-5 h-5" />,
     image: "/images/google_business_new.png",
-    desc: "Optimize your local presence to attract nearby customers actively searching for services."
+    desc: "Optimize local presence to attract nearby customers active in search."
   },
   {
     id: "social-media-marketing",
     title: "Social Media Marketing",
-    icon: <Share2 className="w-6 h-6 text-white" />,
+    icon: <Share2 className="w-5 h-5" />,
     image: "/images/social_media_marketing_new.png",
-    desc: "Structured content and targeted ads to build trust and improve brand recall."
+    desc: "Structured content and ads to build trust and brand recall."
   },
   {
     id: "call-agents",
     title: "AI & Call Agents",
-    icon: <Phone className="w-6 h-6 text-white" />,
+    icon: <Phone className="w-5 h-5" />,
     image: "/images/ai_agents_new.jpg",
-    desc: "Ensure every customer inquiry is handled professionally with smart AI and call management."
+    desc: "Handle every inquiry professionally with smart AI and call systems."
   },
   {
     id: "billing-management",
     title: "Billing & Management",
-    icon: <FileText className="w-6 h-6 text-white" />,
+    icon: <FileText className="w-5 h-5" />,
     image: "/images/billing_management_new.png",
-    desc: "Simplify invoicing, sales tracking, and customer management with compliant systems."
+    desc: "Simplify invoicing and tracking with easy-to-use compliant systems."
   }
 ];
 
 export default function Services() {
   return (
-    <section id="services" className="bg-[#0a0a0a] py-20 md:py-32 px-6 relative overflow-hidden">
-      {/* Background Ambient Glow */}
-      <div className="absolute top-0 left-0 w-1/2 h-1/2 bg-brand-blue/5 blur-[120px] pointer-events-none -translate-x-1/4 -translate-y-1/4" />
-      <div className="absolute bottom-0 right-0 w-1/2 h-1/2 bg-brand-orange/5 blur-[120px] pointer-events-none translate-x-1/4 translate-y-1/4" />
+    <section id="services" className="bg-[#121212] py-16 px-4 md:px-8 relative overflow-hidden">
+      {/* Subtle Background Elements */}
+      <div className="absolute top-0 right-0 w-[600px] h-[600px] bg-brand-blue/5 rounded-full blur-[120px] pointer-events-none opacity-50" />
+      <div className="absolute bottom-0 left-0 w-[600px] h-[600px] bg-brand-orange/5 rounded-full blur-[120px] pointer-events-none opacity-50" />
 
-      <div className="max-w-7xl mx-auto relative z-10">
-        <div className="text-center mb-16 md:mb-24">
+      <div className="max-w-[1400px] mx-auto relative z-10">
+        {/* Header */}
+        <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-12">
           <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6 }}
+            initial={{ opacity: 0, x: -20 }}
+            whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
+            className="max-w-2xl"
           >
-            <div className="inline-flex items-center gap-3 mb-6">
-              <span className="h-px w-8 bg-brand-orange"></span>
-              <span className="text-brand-orange font-black uppercase tracking-[0.2em] text-[10px] md:text-xs">Our Services</span>
+            <div className="flex items-center gap-2 mb-3 text-brand-orange">
+              <Sparkles className="w-4 h-4" />
+              <span className="text-xs font-bold uppercase tracking-wider">What We Offer</span>
             </div>
-            <h2 className="text-4xl md:text-7xl font-black text-white mb-8 leading-tight">
-              Scale Your <span className="text-white/30 italic font-serif">Impact</span> Digitally.
+            <h2 className="text-3xl md:text-5xl font-bold text-white leading-tight">
+              Comprehensive <br />
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-white to-white/50">Digital Solutions</span>
             </h2>
-            <p className="text-gray-400 max-w-3xl mx-auto text-sm md:text-lg leading-relaxed">
-              We provide the strategic firepower and technical execution to help businesses in <span className="text-white font-bold">Bangalore</span> dominate their market. From engineering to growth, we've got you covered.
-            </p>
           </motion.div>
+
+
+
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+        {/* Services Grid */}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
           {services.map((service, index) => (
             <motion.div
               key={index}
-              id={service.id}
-              initial={{ opacity: 0, y: 30 }}
+              initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5, delay: index * 0.1 }}
+              transition={{ delay: index * 0.05 }}
               viewport={{ once: true }}
-              className="group relative overflow-hidden rounded-2xl bg-[#111111] border border-white/5 hover:border-brand-blue/30 transition-all duration-500 flex flex-col h-full"
+              className="group relative bg-[#1c1c1c] hover:bg-[#222] border border-white/5 rounded-2xl overflow-hidden transition-colors duration-300 flex flex-col"
             >
-              {/* Image Container with Dark Overlay */}
-              <div className="relative h-48 w-full overflow-hidden">
+              {/* Image Section */}
+              <div className="relative h-40 w-full overflow-hidden">
                 <Image
                   src={service.image}
                   alt={service.title}
                   fill
-                  quality={65}
-                  loading="lazy"
-                  className="object-cover transition-transform duration-700 group-hover:scale-110 opacity-60"
+                  className="object-cover transition-transform duration-700 group-hover:scale-105 opacity-80 group-hover:opacity-100"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-[#111111] via-[#111111]/40 to-transparent" />
+                <div className="absolute inset-0 bg-gradient-to-b from-transparent via-[#1c1c1c]/50 to-[#1c1c1c]" />
 
-                {/* Corner Icon */}
-                <div className="absolute top-4 left-4 bg-[#1a1a1a] p-2.5 rounded-xl border border-white/10 group-hover:bg-brand-blue group-hover:border-brand-blue transition-all duration-300">
+                {/* Icon Badge */}
+                <div className="absolute top-3 right-3 bg-white/10 backdrop-blur-md border border-white/10 p-2 rounded-lg text-white group-hover:bg-brand-orange group-hover:text-white transition-colors duration-300">
                   {service.icon}
                 </div>
               </div>
 
-              {/* Content */}
-              <div className="p-6 flex flex-col flex-grow">
-                <h3 className="text-white font-bold mb-3 text-xl group-hover:text-brand-orange transition-colors">
+              {/* Content Section */}
+              <div className="p-5 flex-1 flex flex-col">
+                <h3 className="text-lg font-bold text-white mb-2 group-hover:text-brand-orange transition-colors">
                   {service.title}
                 </h3>
-                <p className="text-gray-400 text-sm leading-relaxed mb-6 flex-grow">
+                <p className="text-sm text-gray-400 leading-relaxed mb-4 flex-1">
                   {service.desc}
                 </p>
-                <div className="flex items-center gap-2 text-brand-orange text-[10px] font-black uppercase tracking-widest opacity-40 group-hover:opacity-100 transition-all duration-300">
-                  Detailed Expertise <ArrowUpRight className="w-3 h-3" />
+
+                <div className="flex items-center text-xs font-semibold text-white/40 group-hover:text-white transition-colors uppercase tracking-wider">
+                  Learn More <ArrowRight className="w-3 h-3 ml-1" />
                 </div>
               </div>
 
-              {/* Hover Line Animation */}
-              <div className="absolute bottom-0 left-0 w-0 h-1 bg-brand-blue group-hover:w-full transition-all duration-500" />
+              {/* Hover Glow Effect */}
+              <div className="absolute inset-0 rounded-2xl ring-1 ring-inset ring-transparent group-hover:ring-white/10 transition-all duration-300 pointer-events-none" />
             </motion.div>
           ))}
         </div>
 
-        <div className="text-center mt-20">
-          <Link href="/#contact" className="inline-flex items-center gap-4 group">
-            <span className="text-white font-bold text-lg md:text-xl border-b border-white/10 group-hover:border-brand-orange transition-colors pb-1">
-              Let's discuss your project
-            </span>
-            <div className="w-10 h-10 rounded-full border border-white/20 flex items-center justify-center text-white group-hover:bg-brand-orange group-hover:border-brand-orange transition-all duration-300 transform group-hover:rotate-45">
-              <ArrowUpRight className="w-5 h-5" />
-            </div>
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          className="flex justify-center mt-12 md:mt-16"
+        >
+          <Link
+            href="/#contact"
+            className="inline-flex items-center gap-4 px-8 py-4 rounded-full bg-brand-orange text-white font-bold text-xl md:text-2xl shadow-lg shadow-brand-orange/20 hover:bg-[#ff6b00] hover:scale-105 hover:shadow-brand-orange/40 transition-all duration-300 group"
+          >
+            Start your transformation
+            <ArrowRight className="w-6 h-6 md:w-8 md:h-8 group-hover:translate-x-1 transition-transform" />
           </Link>
-        </div>
+        </motion.div>
       </div>
     </section>
   );

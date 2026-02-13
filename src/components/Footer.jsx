@@ -41,11 +41,15 @@ export default function Footer() {
         {/* Services */}
         <div>
           <h4 className="text-brand-blue font-bold mb-4 md:mb-6 tracking-wide uppercase text-sm">Services</h4>
-          <ul className="space-y-3 text-sm text-gray-600 font-medium">
-            <li><Link href="/#website-development" className="hover:text-brand-blue transition-colors duration-200 block">Web Development</Link></li>
-            <li><Link href="/#seo-services" className="hover:text-brand-blue transition-colors duration-200 block">SEO & Google Business</Link></li>
-            <li><Link href="/#social-media-marketing" className="hover:text-brand-blue transition-colors duration-200 block">Digital Marketing</Link></li>
-            <li><Link href="/#whatsapp-commerce" className="hover:text-brand-blue transition-colors duration-200 block">WhatsApp Business</Link></li>
+          <ul className="space-y-2 text-sm text-gray-600 font-medium">
+            <li><Link href="/#website-development" className="hover:text-brand-blue transition-colors duration-200 block">Website Development</Link></li>
+            <li><Link href="/#ecommerce-solutions" className="hover:text-brand-blue transition-colors duration-200 block">E-Commerce Solutions</Link></li>
+            <li><Link href="/#whatsapp-commerce" className="hover:text-brand-blue transition-colors duration-200 block">WhatsApp Commerce</Link></li>
+            <li><Link href="/#seo-services" className="hover:text-brand-blue transition-colors duration-200 block">SEO Services</Link></li>
+            <li><Link href="/#google-business-profile" className="hover:text-brand-blue transition-colors duration-200 block">Google Business Profile</Link></li>
+            <li><Link href="/#social-media-marketing" className="hover:text-brand-blue transition-colors duration-200 block">Social Media Marketing</Link></li>
+            <li><Link href="/#call-agents" className="hover:text-brand-blue transition-colors duration-200 block">AI & Call Agents</Link></li>
+            <li><Link href="/#billing-management" className="hover:text-brand-blue transition-colors duration-200 block">Billing & Management</Link></li>
           </ul>
         </div>
 
@@ -55,7 +59,7 @@ export default function Footer() {
           <div className="flex gap-4">
             <a
               href="mailto:teamtriuss@gmail.com"
-              className="bg-white border border-gray-200 p-3 rounded-full hover:bg-brand-blue hover:text-white hover:border-brand-blue transition-all duration-300 text-gray-600 shadow-sm"
+              className="bg-white border border-gray-200 p-3 rounded-full hover:bg-[#EA4335] hover:text-white hover:border-[#EA4335] transition-all duration-300 text-[#EA4335] shadow-sm"
               aria-label="Email Us"
             >
               <Mail className="w-5 h-5" />
@@ -64,7 +68,7 @@ export default function Footer() {
               href="https://www.instagram.com/trii.uss?igsh=MXJmY2JiajZ1MXlzeA=="
               target="_blank"
               rel="noopener noreferrer"
-              className="bg-white border border-gray-200 p-3 rounded-full hover:bg-[#E4405F] hover:text-white hover:border-[#E4405F] transition-all duration-300 text-gray-600 shadow-sm"
+              className="bg-white border border-gray-200 p-3 rounded-full hover:bg-[#E4405F] hover:text-white hover:border-[#E4405F] transition-all duration-300 text-[#E4405F] shadow-sm"
               aria-label="Instagram"
             >
               <Instagram className="w-5 h-5" />
@@ -73,7 +77,7 @@ export default function Footer() {
               href="https://wa.me/918431860448"
               target="_blank"
               rel="noopener noreferrer"
-              className="bg-white border border-gray-200 p-3 rounded-full hover:bg-[#25D366] hover:text-white hover:border-[#25D366] transition-all duration-300 text-gray-600 shadow-sm"
+              className="bg-white border border-gray-200 p-3 rounded-full hover:bg-[#25D366] hover:text-white hover:border-[#25D366] transition-all duration-300 text-[#25D366] shadow-sm"
               aria-label="WhatsApp Us"
             >
               <MessageCircle className="w-5 h-5" />
