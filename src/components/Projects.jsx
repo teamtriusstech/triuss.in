@@ -48,28 +48,36 @@ const clients = [
     tags: ["EDUCATION", "VITE, TAILWIND"]
   },
   {
-    name: "Kunafa View",
-    url: "#",
-    video: null,
-    image: "https://images.unsplash.com/photo-1576618148400-f54bed99fcf8?w=600&q=60",
-    desc: "A specialized platform showcasing authentic Middle Eastern flavors and culinary excellence in Bangalore.",
-    tags: ["FOOD & BEVERAGE", "VITE, SUPABASE"]
+    name: "Nadayoga",
+    url: "https://nadayoga.website/",
+    video: "/videos/nadayoga.mp4",
+    image: "https://images.unsplash.com/photo-1545205569-0d3454124973?w=1200&q=80",
+    desc: "Promoting wellness and inner peace through the ancient practice of Nada Yoga and sound healing.",
+    tags: ["WELLNESS", "NEXT.JS, FRAMER"],
   },
   {
-    name: "Bienvenu Apartments",
-    url: "https://angels-empyrean.netlify.app/",
+    name: "Eight Hands",
+    url: "https://eighthandswork.com",
+    video: "/videos/eighthands.mp4",
+    image: "https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?w=1200&q=80",
+    desc: "Innovative interior design studio delivering refined, sustainable, and functional spaces across Bangalore.",
+    tags: ["INTERIOR DESIGN", "REACT, MOTION"]
+  },
+  {
+    name: "Bienvenue",
+    url: "https://bienvenue-waves-book.lovable.app",
     video: "/videos/bienvenu.mp4",
-    image: "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=600&q=60",
+    image: "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?w=1200&q=80",
     desc: "Luxury apartment rental and management services offering premium stays in the heart of the city.",
     tags: ["RENTAL SERVICE", "NEXT.JS, PRISMIC"]
   },
   {
-    name: "Eight Hands Work",
-    url: "https://eighthands.netlify.app/",
-    video: "/videos/eighthands.mp4",
-    image: "https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?w=600&q=60",
-    desc: "Innovative interior design studio delivering refined, sustainable, and functional spaces across Bangalore.",
-    tags: ["INTERIOR DESIGN", "REACT, MOTION"]
+    name: "Kunafa & Creams",
+    url: "https://kunafaandcreams.netlify.app/",
+    video: "/videos/kunafacreams.mp4",
+    image: "https://images.unsplash.com/photo-1515023115689-585010d6d445?w=1200&q=80",
+    desc: "A specialized platform showcasing authentic Middle Eastern flavors and culinary excellence in Bangalore.",
+    tags: ["FOOD & BEVERAGE", "VITE, SUPABASE"]
   }
 ];
 
@@ -182,10 +190,14 @@ export default function Projects() {
             viewport={{ once: true }}
             className="max-w-4xl"
           >
-            <p className="text-brand-blue font-bold tracking-widest text-sm mb-4 uppercase">Our Work</p>
+            <div className="inline-flex items-center gap-3 mb-4">
+              <span className="h-px w-8 bg-brand-blue"></span>
+              <span className="text-brand-blue-light font-black uppercase tracking-[0.2em] text-[10px] md:text-sm">
+                Our Work
+              </span>
+            </div>
             <h2 className="text-5xl md:text-7xl lg:text-8xl font-black text-white tracking-tighter leading-none">
-              Selected <span className="font-serif italic font-normal opacity-90">Success</span><br />
-              Stories.
+              Selected <span className="text-white/40 italic font-serif">Success</span> Stories.
             </h2>
           </motion.div>
 
