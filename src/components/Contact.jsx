@@ -1,0 +1,159 @@
+"use client";
+
+import { Mail, MapPin, Phone, ArrowRight, CheckCircle2 } from "lucide-react";
+import { m } from "framer-motion";
+
+export default function Contact() {
+  return (
+    <section id="contact" className="relative pt-4 md:pt-6 pb-12 md:pb-20 overflow-hidden bg-white">
+      {/* Background Gradients */}
+      <div className="absolute top-0 left-0 w-[600px] h-[600px] bg-brand-blue/5 rounded-full blur-[100px] -translate-x-1/2 -translate-y-1/2" />
+      <div className="absolute bottom-0 right-0 w-[500px] h-[500px] bg-brand-orange/5 rounded-full blur-[80px] translate-x-1/2 translate-y-1/2" />
+
+      <div className="max-w-[1400px] mx-auto px-6 md:px-16 lg:px-24 relative z-10">
+        <div className="grid lg:grid-cols-2 gap-16 lg:gap-24 items-center">
+
+          {/* Left Content */}
+          <m.div
+            initial={{ opacity: 0, x: -30 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6 }}
+          >
+            <span className="inline-block py-1 px-3 rounded-full bg-brand-orange/10 border border-brand-orange/20 text-brand-orange text-xs font-bold uppercase tracking-wider mb-6">
+              Contact Us
+            </span>
+            <h2 className="text-4xl md:text-6xl font-black text-brand-blue mb-6 leading-tight">
+              Ready to <span className="text-transparent bg-clip-text bg-gradient-to-r from-brand-orange to-brand-orange-light">Scale</span> Your Business?
+            </h2>
+            <p className="text-lg text-gray-600 mb-10 leading-relaxed max-w-xl font-medium">
+              Don't let your competition get ahead. Partner with Bangalore's #1 digital growth agency today. We build systems that print money for your business.
+            </p>
+
+            <div className="space-y-6 mb-12">
+              <div className="flex items-start gap-4 group">
+                <div className="p-3 rounded-lg bg-brand-blue/5 border border-brand-blue/10 text-brand-blue group-hover:bg-brand-blue group-hover:text-white transition-colors duration-300">
+                  <Phone className="w-6 h-6" />
+                </div>
+                <div>
+                  <h3 className="text-brand-blue font-bold text-lg">Call Us</h3>
+                  <p className="text-gray-600">+91 84318 60448</p>
+                </div>
+              </div>
+
+              <div className="flex items-start gap-4 group">
+                <div className="p-3 rounded-lg bg-brand-blue/5 border border-brand-blue/10 text-brand-blue group-hover:bg-brand-blue group-hover:text-white transition-colors duration-300">
+                  <Mail className="w-6 h-6" />
+                </div>
+                <div>
+                  <h3 className="text-brand-blue font-bold text-lg">Email Us</h3>
+                  <p className="text-gray-600">teamtriuss@gmail.com</p>
+                </div>
+              </div>
+
+              <div className="flex items-start gap-4 group">
+                <div className="p-3 rounded-lg bg-brand-blue/5 border border-brand-blue/10 text-brand-blue group-hover:bg-brand-blue group-hover:text-white transition-colors duration-300">
+                  <MapPin className="w-6 h-6" />
+                </div>
+                <div>
+                  <h3 className="text-brand-blue font-bold text-lg">Visit Us</h3>
+                  <p className="text-gray-600">Bangalore, Karnataka, India</p>
+                </div>
+              </div>
+            </div>
+
+            <div className="flex flex-wrap gap-4 text-sm text-gray-500 font-bold">
+              <span className="flex items-center gap-2"><CheckCircle2 className="w-5 h-5 text-brand-orange fill-brand-orange/10" /> Free Consultation</span>
+              <span className="flex items-center gap-2"><CheckCircle2 className="w-5 h-5 text-brand-orange fill-brand-orange/10" /> 24/7 Support</span>
+              <span className="flex items-center gap-2"><CheckCircle2 className="w-5 h-5 text-brand-orange fill-brand-orange/10" /> ROI Focused</span>
+            </div>
+          </m.div>
+
+          {/* Right Form Card */}
+          <m.div
+            initial={{ opacity: 0, x: 30 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6, delay: 0.2 }}
+            className="bg-white border border-gray-100 p-8 md:p-10 rounded-3xl shadow-xl shadow-brand-blue/5 relative"
+          >
+            {/* Form Decor */}
+            <div className="absolute top-0 right-0 -mr-10 -mt-10 w-32 h-32 bg-brand-orange/20 rounded-full blur-[60px] opacity-60 pointer-events-none"></div>
+
+            <h3 className="text-2xl font-bold text-brand-blue mb-2">Send us a Message</h3>
+            <p className="text-gray-500 text-sm mb-8 font-medium">We usually respond within 2 hours.</p>
+
+            <form
+              action="https://formspree.io/f/xqeezkyz"
+              method="POST"
+              className="space-y-5"
+            >
+              <div className="grid md:grid-cols-2 gap-5">
+                <div className="space-y-2">
+                  <label htmlFor="name" className="text-sm font-bold text-gray-700 ml-1">Name</label>
+                  <input
+                    id="name"
+                    type="text"
+                    name="name"
+                    placeholder="Your Name"
+                    className="w-full bg-gray-50 border border-gray-200 rounded-xl px-4 py-3 text-gray-900 placeholder:text-gray-400 focus:outline-none focus:border-brand-blue focus:ring-1 focus:ring-brand-blue transition-all font-medium"
+                    required
+                  />
+                </div>
+                <div className="space-y-2">
+                  <label htmlFor="service" className="text-sm font-bold text-gray-700 ml-1">Service Interested In</label>
+                  <select
+                    id="service"
+                    name="service"
+                    className="w-full bg-gray-50 border border-gray-200 rounded-xl px-4 py-3 text-gray-900 focus:outline-none focus:border-brand-blue focus:ring-1 focus:ring-brand-blue transition-all font-medium appearance-none"
+                    required
+                  >
+                    <option value="">Select a Service</option>
+                    <option value="Web Development">Web Development</option>
+                    <option value="SEO Services">SEO Services</option>
+                    <option value="WhatsApp Commerce">WhatsApp Commerce</option>
+                    <option value="Digital Marketing">Digital Marketing</option>
+                    <option value="AI & Automation">AI & Automation</option>
+                    <option value="E-Commerce Solutions">E-Commerce Solutions</option>
+                  </select>
+                </div>
+              </div>
+
+              <div className="space-y-2">
+                <label htmlFor="email" className="text-sm font-bold text-gray-700 ml-1">Email Address</label>
+                <input
+                  id="email"
+                  type="email"
+                  name="email"
+                  placeholder="name@company.com"
+                  className="w-full bg-gray-50 border border-gray-200 rounded-xl px-4 py-3 text-gray-900 placeholder:text-gray-400 focus:outline-none focus:border-brand-blue focus:ring-1 focus:ring-brand-blue transition-all font-medium"
+                  required
+                />
+              </div>
+
+              <div className="space-y-2">
+                <label htmlFor="message" className="text-sm font-bold text-gray-700 ml-1">Message</label>
+                <textarea
+                  id="message"
+                  name="message"
+                  placeholder="Tell us about your project..."
+                  rows="4"
+                  className="w-full bg-gray-50 border border-gray-200 rounded-xl px-4 py-3 text-gray-900 placeholder:text-gray-400 focus:outline-none focus:border-brand-blue focus:ring-1 focus:ring-brand-blue transition-all resize-none font-medium"
+                  required
+                ></textarea>
+              </div>
+
+              <button
+                type="submit"
+                className="w-full bg-gradient-to-r from-brand-blue to-brand-blue-light text-white font-bold text-lg py-4 rounded-xl shadow-lg shadow-brand-blue/20 hover:shadow-brand-blue/30 hover:scale-[1.02] active:scale-[0.98] transition-all duration-300 flex items-center justify-center gap-2 group"
+              >
+                Send Message
+                <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
+              </button>
+            </form>
+          </m.div>
+        </div>
+      </div>
+    </section>
+  );
+}
