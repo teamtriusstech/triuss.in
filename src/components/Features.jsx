@@ -38,7 +38,7 @@ export default function Features() {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.1 }}
             viewport={{ once: true }}
-            className="feature-card border-l-4 border-brand-blue p-8 bg-gray-50 hover:shadow-xl transition-all duration-300"
+            className="feature-card border-l-4 border-brand-blue p-8 bg-gray-50 hover:shadow-xl transition-all duration-300 rounded-r-xl"
           >
             <div className="w-12 h-12 mb-6 text-brand-blue">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
@@ -46,7 +46,7 @@ export default function Features() {
               </svg>
             </div>
             <h3 className="text-xl font-bold mb-4 text-brand-blue">Strategic Clarity</h3>
-            <p className="text-gray-600 text-sm mb-6 leading-relaxed font-medium">
+            <p className="text-gray-600 text-base mb-6 leading-relaxed">
               We eliminate ambiguity with clear strategies, transparent reporting, and dedicated support, ensuring you always know where your growth stands.
             </p>
           </m.div>
@@ -65,8 +65,8 @@ export default function Features() {
                 <polyline points="22 4 12 14.01 9 11.01" strokeLinecap="round" strokeLinejoin="round" />
               </svg>
             </div>
-            <h3 className="text-2xl font-bold mb-4 italic">Scalable Growth</h3>
-            <p className="text-brand-blue text-sm mb-6 leading-relaxed font-bold">
+            <h3 className="text-2xl font-bold mb-4">Scalable Growth</h3>
+            <p className="text-brand-blue text-base mb-6 leading-relaxed font-semibold">
               Our technologies and strategies are built to scale with your business, handling everything from initial traction to market dominance in Bangalore.
             </p>
           </m.div>
@@ -87,7 +87,7 @@ export default function Features() {
               </svg>
             </div>
             <h3 className="text-2xl font-bold mb-4 text-white">Digital Partner</h3>
-            <p className="text-white opacity-80 text-sm mb-6 leading-relaxed font-medium">
+            <p className="text-white/90 text-base mb-6 leading-relaxed">
               We work as your dedicated growth partner, guiding you step-by-step from starting fresh to dominating your industry.
             </p>
           </m.div>
