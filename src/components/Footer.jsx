@@ -59,7 +59,7 @@ export default function Footer() {
           <h4 className="text-brand-blue font-bold mb-3 md:mb-4 tracking-wide uppercase text-sm">Connect</h4>
           <div className="flex gap-4">
             <a
-              href="mailto:teamtriuss@gmail.com"
+              href="mailto:hello@triuss.in"
               className="bg-white border border-gray-200 p-3 rounded-full hover:bg-[#EA4335] hover:text-white hover:border-[#EA4335] transition-all duration-300 text-[#EA4335] shadow-sm"
               aria-label="Email Us"
             >

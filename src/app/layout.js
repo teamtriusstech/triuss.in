@@ -27,7 +27,7 @@ export const metadata = {
     siteName: 'Triuss',
     images: [
       {
-        url: "/images/triuss-logo.svg",
+        url: "/images/logo.png",
         width: 1200,
         height: 630,
         alt: 'Triuss Digital Growth Agency Bangalore',
@@ -52,7 +52,7 @@ export default function RootLayout({ children }) {
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
     "name": "Triuss Digital Growth Agency",
-    "image": "https://www.triuss.in/images/triuss-logo.svg",
+    "image": "https://www.triuss.in/images/logo.png",
     "@id": "https://www.triuss.in",
     "url": "https://www.triuss.in",
     "telephone": "+91 84318 60448",

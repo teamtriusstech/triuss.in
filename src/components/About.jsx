@@ -26,8 +26,8 @@ export default function About() {
             {/* Main Image Container */}
             <div className="relative z-10 rounded-3xl overflow-hidden shadow-2xl border-4 border-white transform transition-transform duration-500 hover:scale-[1.02]">
               <Image
-                src="https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&q=75"
-                alt="Triuss Digital Growth Agency team collaborating"
+                src="https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&w=800&q=75"
+                alt="Digital Strategy Abstract"
                 width={800}
                 height={900}
                 className="w-full h-[600px] object-cover"
@@ -47,7 +47,7 @@ export default function About() {
                   <CheckCircle2 className="w-6 h-6 text-brand-blue" />
                 </div>
                 <div>
-                  <p className="text-3xl font-bold text-gray-900">100%</p>
+                  <p className="text-3xl font-bold text-gray-900">99%</p>
                   <p className="text-xs text-gray-500 font-semibold uppercase tracking-wide">Client Satisfaction</p>
                 </div>
               </div>
@@ -87,8 +87,8 @@ export default function About() {
             {/* Mobile Image (Visible primarily on Mobile/Tablet) */}
             <div className="block lg:hidden relative mb-8 my-6 rounded-2xl overflow-hidden shadow-xl border border-gray-100">
               <Image
-                src="https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&q=75"
-                alt="Triuss Team Layout"
+                src="https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&w=800&q=75"
+                alt="Digital Strategy Abstract"
                 width={800}
                 height={600}
                 className="w-full h-64 object-cover"

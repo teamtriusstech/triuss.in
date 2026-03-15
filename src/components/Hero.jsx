@@ -24,7 +24,7 @@ export default function Hero() {
           <h1
             className="text-4xl sm:text-5xl md:text-7xl lg:text-8xl font-black text-brand-blue tracking-tight leading-[1.1] md:leading-[1] mb-6 px-1 appearance-none"
           >
-            #1 Web Development <br className="hidden md:block" />
+            Premier Web Development <br className="hidden md:block" />
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-brand-blue to-brand-blue-light leading-[1.1] pb-2">
               & Digital Growth
             </span>{" "}
@@ -45,7 +45,7 @@ export default function Hero() {
           {/* Main Image */}
           <div className="relative rounded-2xl overflow-hidden shadow-2xl border-4 border-white bg-white aspect-[16/9] md:aspect-[21/9]">
             <Image
-              src="https://images.unsplash.com/photo-1522071820081-009f0129c71c"
+              src="https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&w=1200&q=75"
               alt="Triuss Digital Web Development & SEO Agency Bangalore"
               fill
               priority

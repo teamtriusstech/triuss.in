@@ -27,7 +27,7 @@ export default function Contact() {
               Ready to <span className="text-transparent bg-clip-text bg-gradient-to-r from-brand-orange to-brand-orange-light">Scale</span> Your Business?
             </h2>
             <p className="text-lg text-gray-600 mb-10 leading-relaxed max-w-xl font-medium">
-              Don't let your competition get ahead. Partner with Bangalore's #1 digital growth agency today. We build systems that print money for your business.
+              Don't let your competition get ahead. Partner with Bangalore's premier digital growth agency today. We build systems that drive actual growth for your business.
             </p>
 
             <div className="space-y-6 mb-12">
@@ -47,7 +47,7 @@ export default function Contact() {
                 </div>
                 <div>
                   <h3 className="text-brand-blue font-bold text-lg">Email Us</h3>
-                  <p className="text-gray-600">teamtriuss@gmail.com</p>
+                  <p className="text-gray-600">hello@triuss.in</p>
                 </div>
               </div>
 

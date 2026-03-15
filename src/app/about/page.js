@@ -29,9 +29,9 @@ export default function AboutPage() {
 
     const stats = [
         { label: "Successful Projects", value: "150+" },
-        { label: "Average ROI Increase", value: "300%" },
+        { label: "Average ROI Increase", value: "3x" },
         { label: "Coffee Consumed", value: "Infinite" },
-        { label: "Happy Clients", value: "100%" }
+        { label: "Client Retention", value: "95%" }
     ];
 
     return (
@@ -52,7 +52,7 @@ export default function AboutPage() {
                         className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white border border-gray-100 shadow-sm text-sm font-bold text-brand-blue mb-8"
                     >
                         <Award className="w-4 h-4 text-brand-orange" />
-                        The #1 Choice for Bangalore Startups
+                        The Trusted Choice for Bangalore Startups
                     </m.div>
 
                     <m.h1
@@ -96,7 +96,7 @@ export default function AboutPage() {
                                 We decided to change that. By combining <strong>cutting-edge software engineering</strong> with <strong>data-driven SEO</strong>, we build digital assets that work harder than any salesperson.
                             </p>
                             <p>
-                                Today, we are proud to be Bangalore's #1 digital growth partner, helping brands in HSR Layout, Indiranagar, and beyond dominate their markets.
+                                Today, we are proud to be a dedicated digital growth partner, helping brands in HSR Layout, Indiranagar, and beyond grow their markets.
                             </p>
                         </div>
                     </m.div>
@@ -109,8 +109,8 @@ export default function AboutPage() {
                     >
                         <div className="aspect-square rounded-[40px] overflow-hidden shadow-2xl border-8 border-gray-50">
                             <Image
-                                src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&w=800&q=75"
-                                alt="Triuss Strategy Session"
+                                src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&w=800&q=75"
+                                alt="Digital Network Strategy"
                                 fill
                                 className="object-cover"
                             />

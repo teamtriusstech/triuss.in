@@ -41,7 +41,7 @@ const clients = [
   },
   {
     name: "Angels Empyrean School",
-    url: "https://angels-empyrean.netlify.app/",
+    url: "#work",
     video: "/videos/angels-empyrean-school.mp4",
     image: "https://images.unsplash.com/photo-1503676260728-1c00da094a0b?auto=format&w=800&q=75",
     desc: "A nurturing educational environment focused on holistic development and academic excellence.",
@@ -49,7 +49,7 @@ const clients = [
   },
   {
     name: "Kunafa & Creams",
-    url: "https://kunafaandcreams.netlify.app/",
+    url: "#work",
     video: "/videos/kunafacreams.mp4",
     image: "https://images.unsplash.com/photo-1576618148400-f54bed99fcf8?auto=format&w=800&q=75",
     desc: "A specialized platform showcasing authentic Middle Eastern flavors and culinary excellence in Bangalore.",
@@ -57,7 +57,7 @@ const clients = [
   },
   {
     name: "Bienvenue",
-    url: "https://bienvenue-waves-book.lovable.app",
+    url: "#work",
     video: "/videos/bienvenu.mp4",
     image: "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&w=800&q=75",
     desc: "Luxury apartment rental and management services offering premium stays in the heart of the city.",
@@ -65,7 +65,7 @@ const clients = [
   },
   {
     name: "Eight Hands",
-    url: "https://eighthands.netlify.app/",
+    url: "#work",
     video: "/videos/eighthands.mp4",
     image: "https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?auto=format&w=800&q=75",
     desc: "Innovative interior design studio delivering refined, sustainable, and functional spaces across Bangalore.",

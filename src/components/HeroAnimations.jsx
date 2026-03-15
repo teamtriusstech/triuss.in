@@ -16,7 +16,7 @@ export function HeroBadges() {
                 <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-brand-blue opacity-75"></span>
                 <span className="relative inline-flex rounded-full h-2 w-2 bg-brand-blue"></span>
             </span>
-            #1 Digital Growth Partner in Bangalore
+            Leading Digital Growth Partner in Bangalore
         </m.div>
     );
 }
@@ -55,7 +55,7 @@ export function HeroFloatingCards() {
                     <TrendingUp className="w-4 h-4 md:w-6 md:h-6" />
                 </div>
                 <div>
-                    <div className="text-base md:text-2xl font-bold text-gray-900 leading-none mb-0.5">300%</div>
+                    <div className="text-base md:text-2xl font-bold text-gray-900 leading-none mb-0.5">3x</div>
                     <div className="text-[10px] md:text-xs text-brand-orange-text font-bold uppercase tracking-wide leading-none">Avg. ROI Growth</div>
                 </div>
             </m.div>
